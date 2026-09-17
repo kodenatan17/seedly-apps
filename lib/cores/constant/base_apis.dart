@@ -19,4 +19,7 @@ class BaseApis {
   static const String authDeleteAccount = '/auth/delete-account';
 
   static const String authLogout = '/auth/logout';
+
+  static const String notificationRegisterToken =
+      '/v1/notifications/register-token';
 }

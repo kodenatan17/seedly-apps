@@ -95,6 +95,7 @@ dependencies:
   # Responsive UI
   flutter_screenutil: ^5.9.3
   google_sign_in: ^7.2.0
+  hive: ^2.2.3
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,7 @@
 import 'package:get_it/get_it.dart';
 import 'package:seedly_app/features/auth/di/auth_module.dart';
 import 'package:seedly_app/features/experience/di/experience_module.dart';
+import 'package:seedly_app/features/notification/di/notification_module.dart';
 
 /// The single, application-level DI container.
 ///
@@ -20,6 +21,7 @@ final GetIt getIt = GetIt.instance;
 void registerCoreDependencies() {
   AuthModule.register(getIt: getIt);
   ExperienceModule.register(getIt: getIt);
+  NotificationModule.register(getIt: getIt);
 
   // TODO: Register NetworkClient when the Dio/http client lands.
   // getIt.registerSingleton<NetworkClient>(DioNetworkClient(dio));
