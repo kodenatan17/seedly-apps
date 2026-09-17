@@ -1,10 +1,17 @@
 # Miscellaneous
+*.dev.env
+*.prod.env
+*.env
 *.class
 *.log
 *.pyc
 *.swp
 .DS_Store
 .atom/
+.opencode/
+.claude/
+.vscode/
+.github/
 .build/
 .buildlog/
 .history
@@ -17,6 +24,15 @@ migrate_working_dir/
 *.ipr
 *.iws
 .idea/
+
+# Flutter generated files
+*.g.dart
+*.config.dart
+*.mocks.dart
+*.gen.dart
+
+# Project related
+*.env
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
