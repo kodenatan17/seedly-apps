@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:seedly_app/cores/env/env.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -49,20 +50,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAZ41GMEVwWpWv_8VSM9qEU_hehPDPC-e4',
-    appId: '1:79996802200:android:90425979f7c3cc3b556ced',
-    messagingSenderId: '79996802200',
-    projectId: 'seedly-8c65d',
-    storageBucket: 'seedly-8c65d.firebasestorage.app',
+  static FirebaseOptions android = FirebaseOptions(
+    apiKey: BaseEnvirontment().firebaseApiKey,
+    appId: BaseEnvirontment().firebaseAppId,
+    messagingSenderId: BaseEnvirontment().firebaseMessagingSenderId,
+    projectId: BaseEnvirontment().firebaseProjectId,
+    storageBucket: BaseEnvirontment().firebaseStorageBucket,
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAsktPvgoR5zH2ecuJAKOh4IR3LYYY_8bs',
-    appId: '1:79996802200:ios:d32ad5fcedb01e06556ced',
-    messagingSenderId: '79996802200',
-    projectId: 'seedly-8c65d',
-    storageBucket: 'seedly-8c65d.firebasestorage.app',
-    iosBundleId: 'com.example.seedlyApp',
+  static FirebaseOptions ios = FirebaseOptions(
+    apiKey: BaseEnvirontment().firebaseApiKeyIos,
+    appId: BaseEnvirontment().firebaseAppIdIos,
+    messagingSenderId: BaseEnvirontment().firebaseMessagingSenderId,
+    projectId: BaseEnvirontment().firebaseProjectId,
+    storageBucket: BaseEnvirontment().firebaseStorageBucket,
+    iosBundleId: BaseEnvirontment().firebaseIosBundleId,
   );
 }

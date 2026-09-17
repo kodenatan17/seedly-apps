@@ -91,8 +91,10 @@ dependencies:
   version: 3.0.2
   flutter_local_notifications: ^17.2.3
   uuid: ^4.5.0
+  flutter_secure_storage: ^9.2.2
   # Responsive UI
   flutter_screenutil: ^5.9.3
+  google_sign_in: ^7.2.0
 
 dev_dependencies:
   flutter_test:

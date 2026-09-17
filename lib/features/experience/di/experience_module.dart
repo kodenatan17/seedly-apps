@@ -2,7 +2,6 @@ import 'package:get_it/get_it.dart';
 
 import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
 import '../applications/repository/experience_repository.dart';
-import '../applications/usecases/get_active_missions_usecase.dart';
 import '../applications/usecases/get_mission_detail_usecase.dart';
 import '../applications/usecases/get_mission_history_usecase.dart';
 import '../applications/usecases/get_missions_usecase.dart';
@@ -69,11 +68,6 @@ class ExperienceModule {
         () => GetMissionHistoryUseCase(getIt<ExperienceRepository>()),
       );
     }
-    if (!getIt.isRegistered<GetActiveMissionsUseCase>()) {
-      getIt.registerLazySingleton(
-        () => GetActiveMissionsUseCase(getIt<GetMissionsUseCase>()),
-      );
-    }
 
     // Blocs: factory-registered (fresh instance per resolution) so each route
     // push owns its own bloc lifecycle. Route builders in
@@ -105,11 +99,9 @@ class MissionUseCases {
     required this.getMissions,
     required this.getMissionDetail,
     required this.getMissionHistory,
-    required this.getActiveMissions,
   });
 
   final GetMissionsUseCase getMissions;
   final GetMissionDetailUseCase getMissionDetail;
   final GetMissionHistoryUseCase getMissionHistory;
-  final GetActiveMissionsUseCase getActiveMissions;
 }

@@ -11,6 +11,9 @@ abstract class BaseProdEnv {
   @EnviedField(varName: 'FIREBASE_APP_ID')
   static String firebaseAppId = _BaseProdEnv.firebaseAppId;
 
+  @EnviedField(varName: 'FIREBASE_APP_ID_IOS')
+  static String firebaseAppIdIos = _BaseProdEnv.firebaseAppIdIos;
+
   @EnviedField(varName: 'FIREBASE_MESSAGING_SENDER_ID')
   static String firebaseMessagingSenderId =
       _BaseProdEnv.firebaseMessagingSenderId;

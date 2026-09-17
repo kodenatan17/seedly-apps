@@ -14,6 +14,7 @@ class BaseEnvirontment {
   late final String _baseUrl;
   late final String _firebaseApiKey;
   late final String _firebaseAppId;
+  late final String _firebaseAppIdIos;
   late final String _firebaseMessagingSenderId;
   late final String _firebaseProjectId;
   late final String _firebaseStorageBucket;
@@ -99,6 +100,7 @@ class BaseEnvirontment {
     Future.wait([
       _getFirebaseApiKey(),
       _getFirebaseAppId(),
+      _getFirebaseAppIdIos(),
       _getFirebaseMessagingSenderId(),
       _getFirebaseProjectId(),
       _getFirebaseStorageBucket(),
@@ -117,6 +119,7 @@ class BaseEnvirontment {
         _baseUrl = BaseProdEnv.baseUrl;
         _firebaseApiKey = BaseProdEnv.firebaseApiKey;
         _firebaseAppId = BaseProdEnv.firebaseAppId;
+        _firebaseAppIdIos = BaseProdEnv.firebaseAppIdIos;
         _firebaseMessagingSenderId = BaseProdEnv.firebaseMessagingSenderId;
         _firebaseProjectId = BaseProdEnv.firebaseProjectId;
         _firebaseStorageBucket = BaseProdEnv.firebaseStorageBucket;
@@ -129,6 +132,7 @@ class BaseEnvirontment {
         _baseUrl = BaseDevEnv.baseUrl;
         _firebaseApiKey = BaseDevEnv.firebaseApiKey;
         _firebaseAppId = BaseDevEnv.firebaseAppId;
+        _firebaseAppIdIos = BaseDevEnv.firebaseAppIdIos;
         _firebaseMessagingSenderId = BaseDevEnv.firebaseMessagingSenderId;
         _firebaseProjectId = BaseDevEnv.firebaseProjectId;
         _firebaseStorageBucket = BaseDevEnv.firebaseStorageBucket;
@@ -160,6 +164,18 @@ class BaseEnvirontment {
         break;
       case BaseEnvType.dev:
         _firebaseAppId = BaseDevEnv.firebaseAppId;
+        break;
+    }
+  }
+
+  Future<void> _getFirebaseAppIdIos() async {
+    final currentEnv = await getCurrentEnv();
+    switch (currentEnv) {
+      case BaseEnvType.prod:
+        _firebaseAppIdIos = BaseProdEnv.firebaseAppIdIos;
+        break;
+      case BaseEnvType.dev:
+        _firebaseAppIdIos = BaseDevEnv.firebaseAppIdIos;
         break;
     }
   }
@@ -256,6 +272,7 @@ class BaseEnvirontment {
 
   String get firebaseApiKey => _firebaseApiKey;
   String get firebaseAppId => _firebaseAppId;
+  String get firebaseAppIdIos => _firebaseAppIdIos;
   String get firebaseMessagingSenderId => _firebaseMessagingSenderId;
   String get firebaseProjectId => _firebaseProjectId;
   String get firebaseStorageBucket => _firebaseStorageBucket;

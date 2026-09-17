@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'cores/router/app_router.dart';
+import 'features/auth/public_api.dart';
 import 'features/experience/public_api.dart';
 
 /// App composition root.
@@ -15,16 +16,11 @@ class SeedlyApp extends StatelessWidget {
 
   final GoRouter _router = buildAppRouter(
     initialLocation: MissionRoutePaths.list,
-    routes: [
-      ...missionRoutes(),
-    ],
+    routes: [...authRoutes(), ...missionRoutes()],
   );
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      title: 'Seedly',
-      routerConfig: _router,
-    );
+    return MaterialApp.router(title: 'Seedly', routerConfig: _router);
   }
 }

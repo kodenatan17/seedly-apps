@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:seedly_app/cores/dependency/injection.dart';
+import 'package:seedly_app/cores/domain/auth_local_data_source.dart';
 
 class AuthorizationInterceptors extends Interceptor {
   bool isWhiteListPath(RequestOptions options) {
@@ -12,11 +13,14 @@ class AuthorizationInterceptors extends Interceptor {
     '/auth/request-otp',
     '/auth/submit-otp',
     '/auth/refresh-token',
+    '/auth/google-sign-in',
   ];
 
   @override
   void onRequest(
-      RequestOptions options, RequestInterceptorHandler handler) async {
+    RequestOptions options,
+    RequestInterceptorHandler handler,
+  ) async {
     final AuthLocalDataSource authLocalDataSource =
         getIt<AuthLocalDataSource>();
 
@@ -26,8 +30,9 @@ class AuthorizationInterceptors extends Interceptor {
         final accessToken = await authLocalDataSource.getAccessToken();
         options.headers.addAll({"Authorization": "Bearer $accessToken"});
       }
-      options.headers
-          .addAll({"X-Device-Type": Platform.isIOS ? "IOS" : "ANDROID"});
+      options.headers.addAll({
+        "X-Device-Type": Platform.isIOS ? "IOS" : "ANDROID",
+      });
       super.onRequest(options, handler);
     } catch (e) {
       super.onRequest(options, handler);

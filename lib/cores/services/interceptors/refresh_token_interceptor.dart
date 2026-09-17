@@ -2,6 +2,8 @@ import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
 import 'package:seedly_app/cores/dependency/injection.dart';
+import 'package:seedly_app/cores/domain/auth_local_data_source.dart';
+import 'package:seedly_app/cores/domain/auth_token_refresher.dart';
 import 'package:seedly_app/cores/helpers/base_exception_helper.dart';
 
 class RefreshTokenInterceptor extends Interceptor {
@@ -62,7 +64,7 @@ class RefreshTokenInterceptor extends Interceptor {
 
     final AuthLocalDataSource authLocalDataSource =
         getIt<AuthLocalDataSource>();
-    final AuthRemoteService authRemoteService = getIt<AuthRemoteService>();
+    final AuthTokenRefresher authTokenRefresher = getIt<AuthTokenRefresher>();
 
     if (err.response != null) {
       final statusCode = err.response!.statusCode;
@@ -87,16 +89,14 @@ class RefreshTokenInterceptor extends Interceptor {
 
             debugPrint('🔐 RefreshTokenInterceptor: Calling refresh token API');
 
-            final response = await authRemoteService.authRefreshToken(
-              AuthRefreshTokenRequestModel(refreshToken),
-            );
+            final result = await authTokenRefresher.refreshToken(refreshToken);
 
             debugPrint('🔐 RefreshTokenInterceptor: Refresh successful, saving new tokens');
 
             await authLocalDataSource.setToken(
-              response.data.accessToken,
-              response.data.refreshToken,
-              response.data.agoraId,
+              accessToken: result.accessToken,
+              refreshToken: result.refreshToken,
+              agoraId: result.agoraId,
             );
 
             debugPrint('🔐 RefreshTokenInterceptor: Retrying original request');
