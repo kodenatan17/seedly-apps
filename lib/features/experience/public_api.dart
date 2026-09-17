@@ -33,9 +33,33 @@ export 'presentation/routes/mission_routes.dart'
 // --- public contracts (host UI reads these) -------------------------------
 export 'applications/entities/mission/mission_instance_entities.dart'
     show MissionInstance, XpGrant;
+export 'applications/entities/achievement/achievement_entities.dart'
+    show AchievementEntity;
+export 'applications/usecases/get_achievements_usecase.dart'
+    show GetAchievementsUseCase;
+export 'applications/entities/quest/quest_entities.dart'
+    show QuestEntity, QuestSubmitResultEntity;
+export 'applications/entities/quest/quest_history_entities.dart'
+    show QuestHistoryEntity;
+export 'applications/entities/question/question_entities.dart'
+    show QuestionEntity, QuestionOptionEntity, QuestionAnswerResultEntity;
+export 'applications/usecases/get_plant_quests_usecase.dart'
+    show GetPlantQuestsUseCase;
+export 'applications/usecases/submit_quest_usecase.dart'
+    show SubmitQuestUseCase;
+export 'applications/usecases/get_quest_history_usecase.dart'
+    show GetQuestHistoryUseCase;
+export 'applications/usecases/get_plant_questions_usecase.dart'
+    show GetPlantQuestionsUseCase;
+export 'applications/usecases/submit_question_answer_usecase.dart'
+    show SubmitQuestionAnswerUseCase;
 export 'presentation/bloc/mission_bloc.dart' show MissionBloc;
 export 'presentation/bloc/mission_event.dart'
-    show MissionRequested, MissionRefreshed, MissionDetailRequested, MissionReset;
+    show
+        MissionRequested,
+        MissionRefreshed,
+        MissionDetailRequested,
+        MissionReset;
 export 'presentation/bloc/mission_state.dart'
     show
         MissionState,

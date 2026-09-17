@@ -2,9 +2,15 @@ import 'package:get_it/get_it.dart';
 
 import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
 import '../applications/repository/experience_repository.dart';
+import '../applications/usecases/get_achievements_usecase.dart';
 import '../applications/usecases/get_mission_detail_usecase.dart';
 import '../applications/usecases/get_mission_history_usecase.dart';
 import '../applications/usecases/get_missions_usecase.dart';
+import '../applications/usecases/get_plant_questions_usecase.dart';
+import '../applications/usecases/get_plant_quests_usecase.dart';
+import '../applications/usecases/get_quest_history_usecase.dart';
+import '../applications/usecases/submit_question_answer_usecase.dart';
+import '../applications/usecases/submit_quest_usecase.dart';
 import '../infrastructure/datasources/experience_remote_data_source.dart';
 import '../infrastructure/repositories/experience_repository_impl.dart';
 import '../infrastructure/services/dio/experience_ret_network_client.dart';
@@ -36,8 +42,7 @@ class ExperienceModule {
     }
     if (!getIt.isRegistered<ExperienceRemoteDataSource>()) {
       getIt.registerLazySingleton<ExperienceRemoteDataSource>(
-        () =>
-            ExperienceRemoteDataSourceImpl(getIt<ExperienceRemoteService>()),
+        () => ExperienceRemoteDataSourceImpl(getIt<ExperienceRemoteService>()),
       );
     }
     if (!getIt.isRegistered<BaseDioErrorHandler>()) {
@@ -66,6 +71,36 @@ class ExperienceModule {
     if (!getIt.isRegistered<GetMissionHistoryUseCase>()) {
       getIt.registerLazySingleton(
         () => GetMissionHistoryUseCase(getIt<ExperienceRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<GetAchievementsUseCase>()) {
+      getIt.registerLazySingleton(
+        () => GetAchievementsUseCase(getIt<ExperienceRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<GetPlantQuestsUseCase>()) {
+      getIt.registerLazySingleton(
+        () => GetPlantQuestsUseCase(getIt<ExperienceRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<SubmitQuestUseCase>()) {
+      getIt.registerLazySingleton(
+        () => SubmitQuestUseCase(getIt<ExperienceRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<GetQuestHistoryUseCase>()) {
+      getIt.registerLazySingleton(
+        () => GetQuestHistoryUseCase(getIt<ExperienceRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<GetPlantQuestionsUseCase>()) {
+      getIt.registerLazySingleton(
+        () => GetPlantQuestionsUseCase(getIt<ExperienceRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<SubmitQuestionAnswerUseCase>()) {
+      getIt.registerLazySingleton(
+        () => SubmitQuestionAnswerUseCase(getIt<ExperienceRepository>()),
       );
     }
 

@@ -14,4 +14,3 @@ class GetMissionHistoryUseCase {
     return await _repository.fetchMissionHistory();
   }
 }
-

@@ -10,6 +10,5 @@ class GetMissionDetailUseCase {
 
   Future<ResultEntity<MissionDetailEntity>> call(String id) async {
     return await _repository.fetchMissionDetail(id);
-    
   }
 }
