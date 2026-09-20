@@ -42,10 +42,6 @@ abstract class ExperienceRemoteDataSource {
   );
 }
 
-/// Bound when no authenticated HTTP client is configured yet.
-///
-/// Fails loudly with a typed failure instead of returning empty data, so the
-/// UI can show a retry state rather than a misleading "no missions".
 @LazySingleton(as: ExperienceRemoteDataSource)
 class ExperienceRemoteDataSourceImpl implements ExperienceRemoteDataSource {
   final ExperienceRemoteService _experienceRemoteService;

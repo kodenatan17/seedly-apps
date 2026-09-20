@@ -1,0 +1,164 @@
+{
+  "@@locale": "en",
+
+  "backButtonLabel": "Back",
+  "closeButtonLabel": "Close",
+  "progressFraction": "{current} / {total}",
+  "@progressFraction": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "milestoneNumber": "Milestone {number}",
+  "@milestoneNumber": {
+    "placeholders": {
+      "number": {"type": "int"}
+    }
+  },
+  "milestonesCount": "{count} Milestones",
+  "@milestonesCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+
+  "achievementsTitle": "Achievements",
+  "gardenMasteryTitle": "Garden Mastery",
+  "levelLabel": "Level {level}",
+  "@levelLabel": {
+    "placeholders": {
+      "level": {"type": "int"}
+    }
+  },
+  "levelShort": "Lvl {level}",
+  "@levelShort": {
+    "placeholders": {
+      "level": {"type": "int"}
+    }
+  },
+  "gardenMasterySubtitle": "Track your growing milestones and earn badges as your digital greenhouse flourishes.",
+  "currentMedalLabel": "CURRENT MEDAL",
+  "masterGardenerName": "Master Gardener",
+  "masterGardenerQuote": "\"You're becoming a great plant caretaker! Your plants are thriving with steady care.\"",
+  "milestonesProgressTitle": "Milestones Progress",
+  "milestonesToNextRank": "{count, plural, =1{1 milestone to next rank} other{{count} milestones to next rank}}",
+  "@milestonesToNextRank": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "percentCompleted": "{percent}% completed",
+  "@percentCompleted": {
+    "placeholders": {
+      "percent": {"type": "int"}
+    }
+  },
+  "nextUnlockLabel": "NEXT UNLOCK",
+  "unlockedMedalsTitle": "Unlocked Medals",
+  "earnedCount": "{count} earned",
+  "@earnedCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+
+  "milestoneProgressTitle": "Milestone Progress",
+  "medalJourneyLabel": "Medal Journey",
+  "medalJourneyDescription": "Grow your rank, unlock rare secrets, and tend your lush digital sanctuary!",
+  "tierValue": "Tier {tier}",
+  "@tierValue": {
+    "placeholders": {
+      "tier": {"type": "int"}
+    }
+  },
+  "currentRankLabel": "Current Rank",
+  "milestonesLabel": "Milestones",
+  "leftValue": "{count} Left",
+  "@leftValue": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "toNextTierLabel": "To Next Tier",
+  "tierCompleted": "Tier {tier} • Completed",
+  "@tierCompleted": {
+    "placeholders": {
+      "tier": {"type": "int"}
+    }
+  },
+  "currentActiveTierLabel": "CURRENT ACTIVE TIER",
+  "rankLabel": "Rank {rank}",
+  "@rankLabel": {
+    "placeholders": {
+      "rank": {"type": "int"}
+    }
+  },
+  "milestoneProgressLabel": "Milestone Progress",
+  "milestonesFraction": "{current} / {total} Milestones",
+  "@milestonesFraction": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "nextMilestoneTargetLabel": "Next Milestone Target",
+  "lockedMilestones": "Locked • {count} Milestones",
+  "@lockedMilestones": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "legendaryTier": "LEGENDARY TIER • {count} MILESTONES",
+  "@legendaryTier": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "keepRootsGrowingTitle": "Keep Your Roots Growing!",
+  "keepRootsGrowingDescription": "Complete today's daily gardening missions to earn rapid milestone points toward {nextTier}.",
+  "@keepRootsGrowingDescription": {
+    "placeholders": {
+      "nextTier": {"type": "String"}
+    }
+  },
+  "viewTodaysMissions": "View Today's Missions",
+
+  "tierSeedlingName": "Seedling",
+  "tierSeedlingDescription": "Every mighty oak begins as a tiny dream in the dirt. You planted your first root!",
+  "tierSproutName": "Sprout",
+  "tierSproutDescription": "First green leaves breaking the soil! You are learning the rhythm of daily sunshine and water.",
+  "tierGrowerName": "Grower",
+  "tierGrowerDescription": "Stems are thickening and branches reaching out. Consistent care turns tiny sprouts into resilient stalks.",
+  "tierNurturerName": "Nurturer",
+  "tierNurturerDescription": "You know when plants are thirsty before they even ask. Your empathy brings vibrant vitality to the garden.",
+  "tierGardenerName": "Gardener",
+  "tierGardenerDescription": "You manage soil health, pruning schedules, and joyful blossoms with seasoned expertise!",
+  "tierPlantKeeperName": "Plant Keeper",
+  "tierPlantKeeperDescription": "Guard rare botanical species and unlock legendary greenhouse upgrades.",
+  "plantKeeperUnlockDescription": "Unlock exotic seeds and fertilizer boosts!",
+  "tierGardenKeeperName": "Garden Keeper",
+  "tierGardenKeeperDescription": "Master complex companion planting and balance seasonal microclimates.",
+  "tierGardenMasterName": "Garden Master",
+  "tierGardenMasterDescription": "Design breathtaking ecosystem landscapes that hum with pollinator wildlife.",
+  "tierGreenThumbName": "Green Thumb",
+  "tierGreenThumbDescription": "A legendary touch where even dormant seeds spring instantly to joyful life.",
+  "tierBloomMasterName": "Bloom Master",
+  "tierBloomMasterDescription": "The ultimate pinnacle of sanctuary cultivation. Your sanctuary becomes a timeless wonderland of eternal spring!",
+
+  "newAchievementsTitle": "New Achievements",
+  "achievementUnlockedBadge": "Achievement Unlocked",
+  "newMedalUnlockedTitle": "🎉 New Medal Unlocked!",
+  "plantKeeperSupremeName": "Plant Keeper Supreme",
+  "unlockedMedalMessage": "Amazing work! {petName} and your digital garden are flourishing.",
+  "@unlockedMedalMessage": {
+    "placeholders": {
+      "petName": {"type": "String"}
+    }
+  },
+  "milestonesCompletedLabel": "Milestones completed",
+  "unlockedPerkLabel": "Unlocked Perk",
+  "goldenPotPerk": "Special Golden Pot Skin & +100 XP Bonus!",
+  "claimRewardAndContinue": "Claim Reward & Continue",
+  "viewInMedalJourney": "View in Medal Journey"
+}

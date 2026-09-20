@@ -22,6 +22,11 @@ export 'presentation/pages/mission_list_screen.dart' show MissionListScreen;
 export 'presentation/pages/mission_detail_screen.dart' show MissionDetailScreen;
 export 'presentation/pages/mission_history_screen.dart'
     show MissionHistoryScreen;
+export 'presentation/pages/achievement_page.dart' show AchievementPage;
+export 'presentation/pages/achievement_milestone_page.dart'
+    show AchievementMilestonePage;
+export 'presentation/pages/achievement_unlocked_page.dart'
+    show AchievementUnlockedPage;
 
 // --- module composition ---------------------------------------------------
 export 'di/experience_module.dart' show ExperienceModule, MissionUseCases;
@@ -29,6 +34,8 @@ export 'di/experience_module.dart' show ExperienceModule, MissionUseCases;
 // --- route definitions (composed into the global router by the app) ------
 export 'presentation/routes/mission_routes.dart'
     show missionRoutes, MissionRoutePaths;
+export 'presentation/routes/achievement_routes.dart'
+    show achievementRoutes, AchievementRoutePaths;
 
 // --- public contracts (host UI reads these) -------------------------------
 export 'applications/entities/mission/mission_instance_entities.dart'
