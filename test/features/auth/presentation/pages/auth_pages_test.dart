@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:seedly_app/atomic/atomic.dart';
-import 'package:seedly_app/features/auth/presentation/pages/forgot_password_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/onboarding_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/otp_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/register_screen.dart';
-import 'package:seedly_app/l10n/l10n.dart';
+import 'package:growpico_app/atomic/atomic.dart';
+import 'package:growpico_app/features/auth/presentation/pages/forgot_password_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/onboarding_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/otp_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/register_screen.dart';
+import 'package:growpico_app/l10n/l10n.dart';
 
 Widget _wrap(Widget page, {Locale locale = const Locale('en')}) => MaterialApp(
   theme: AppTheme.light,
@@ -24,7 +24,7 @@ Future<void> _tap(WidgetTester tester, Finder finder) async {
 }
 
 const _termsLabel =
-    'I agree to Seedly Family Terms and Child Safety Privacy Policy';
+    'I agree to GrowPico Family Terms and Child Safety Privacy Policy';
 
 void main() {
   Future<void> setPhoneSize(WidgetTester tester) async {
@@ -85,7 +85,7 @@ void main() {
       await _tap(tester, find.text('Create Account'));
       expect(find.text('Email is required'), findsOneWidget);
 
-      await tester.enterText(find.byType(TextField).at(0), 'nurul@seedly.app');
+      await tester.enterText(find.byType(TextField).at(0), 'nurul@growpico.app');
       await tester.enterText(find.byType(TextField).at(1), 'Sprouting99!');
       await tester.pumpAndSettle();
       expect(find.text('Lvl. 3 Bloom'), findsOneWidget);

@@ -2,9 +2,9 @@ import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
-import 'package:seedly_app/cores/env/env.dart';
-import 'package:seedly_app/cores/services/interceptors/authorization_interceptor.dart';
-import 'package:seedly_app/cores/services/interceptors/refresh_token_interceptor.dart';
+import 'package:growpico_app/cores/env/env.dart';
+import 'package:growpico_app/cores/services/interceptors/authorization_interceptor.dart';
+import 'package:growpico_app/cores/services/interceptors/refresh_token_interceptor.dart';
 
 /// Auth's own Dio instance, mirroring `ExperienceRetApiDio`.
 ///

@@ -1,6 +1,6 @@
-import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
-import 'package:seedly_app/cores/domain/base_use_case.dart';
-import 'package:seedly_app/features/auth/applications/repository/auth_repository.dart';
+import 'package:growpico_app/cores/domain/base_result_entity_helper.dart';
+import 'package:growpico_app/cores/domain/base_use_case.dart';
+import 'package:growpico_app/features/auth/applications/repository/auth_repository.dart';
 
 class ForgotPasswordUseCase implements UseCaseWithParams<String, bool> {
   const ForgotPasswordUseCase(this._authRepository);

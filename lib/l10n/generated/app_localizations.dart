@@ -533,7 +533,7 @@ abstract class AppLocalizations {
   /// No description provided for @gardenWaitingDescription.
   ///
   /// In en, this message translates to:
-  /// **'Connect a physical Seedly Smart Pot or start growing your first digital seed companion today!'**
+  /// **'Connect a physical GrowPico Smart Pot or start growing your first digital seed companion today!'**
   String get gardenWaitingDescription;
 
   /// No description provided for @addFirstPlantButton.
@@ -635,13 +635,13 @@ abstract class AppLocalizations {
   /// No description provided for @scanQrMethodDescription.
   ///
   /// In en, this message translates to:
-  /// **'Fastest way if you have a Seedly starter kit.'**
+  /// **'Fastest way if you have a GrowPico starter kit.'**
   String get scanQrMethodDescription;
 
   /// No description provided for @enterCodeMethodTitle.
   ///
   /// In en, this message translates to:
-  /// **'Enter SEEDLY Code'**
+  /// **'Enter GROWPICO Code'**
   String get enterCodeMethodTitle;
 
   /// No description provided for @enterCodeMethodDescription.
@@ -671,7 +671,7 @@ abstract class AppLocalizations {
   /// No description provided for @iotSyncFooterNote.
   ///
   /// In en, this message translates to:
-  /// **'Smart Pot syncs with SEEDLY OS over BLE 5.2'**
+  /// **'Smart Pot syncs with GROWPICO OS over BLE 5.2'**
   String get iotSyncFooterNote;
 
   /// No description provided for @smartPotReadyTitle.
@@ -695,7 +695,7 @@ abstract class AppLocalizations {
   /// No description provided for @scanSeedCodeHeadline.
   ///
   /// In en, this message translates to:
-  /// **'Scan your SEEDLY seed code 🌱'**
+  /// **'Scan your GROWPICO seed code 🌱'**
   String get scanSeedCodeHeadline;
 
   /// No description provided for @scanSeedCodeDescription.
@@ -728,17 +728,17 @@ abstract class AppLocalizations {
   /// **'Add Plant'**
   String get addPlantTitle;
 
-  /// No description provided for @enterSeedlyCodeHeadline.
+  /// No description provided for @enterGrowPicoCodeHeadline.
   ///
   /// In en, this message translates to:
-  /// **'Enter SEEDLY Code'**
-  String get enterSeedlyCodeHeadline;
+  /// **'Enter GROWPICO Code'**
+  String get enterGrowPicoCodeHeadline;
 
-  /// No description provided for @enterSeedlyCodeDescription.
+  /// No description provided for @enterGrowPicoCodeDescription.
   ///
   /// In en, this message translates to:
   /// **'Find the 10-digit code on the bottom of your sensor kit or on the instruction manual.'**
-  String get enterSeedlyCodeDescription;
+  String get enterGrowPicoCodeDescription;
 
   /// No description provided for @seedCodeHint.
   ///
@@ -773,7 +773,7 @@ abstract class AppLocalizations {
   /// No description provided for @seedCatalogueDescription.
   ///
   /// In en, this message translates to:
-  /// **'Choose a seed to begin its journey. Each plant comes with tailored care routines to help it thrive in your Seedly environment.'**
+  /// **'Choose a seed to begin its journey. Each plant comes with tailored care routines to help it thrive in your GrowPico environment.'**
   String get seedCatalogueDescription;
 
   /// No description provided for @addSeedButton.
@@ -950,11 +950,11 @@ abstract class AppLocalizations {
   /// **'Sign in with Google'**
   String get authSignInWithGoogle;
 
-  /// No description provided for @authNewToSeedly.
+  /// No description provided for @authNewToGrowPico.
   ///
   /// In en, this message translates to:
-  /// **'New to Seedly?'**
-  String get authNewToSeedly;
+  /// **'New to GrowPico?'**
+  String get authNewToGrowPico;
 
   /// No description provided for @authCreateAnAccountLink.
   ///
@@ -965,7 +965,7 @@ abstract class AppLocalizations {
   /// No description provided for @authRegisterTitle.
   ///
   /// In en, this message translates to:
-  /// **'Create your SEEDLY account 🌱'**
+  /// **'Create your GROWPICO account 🌱'**
   String get authRegisterTitle;
 
   /// No description provided for @authRegisterSubtitle.
@@ -1031,7 +1031,7 @@ abstract class AppLocalizations {
   /// No description provided for @authTermsAgreement.
   ///
   /// In en, this message translates to:
-  /// **'I agree to Seedly Family Terms and Child Safety Privacy Policy'**
+  /// **'I agree to GrowPico Family Terms and Child Safety Privacy Policy'**
   String get authTermsAgreement;
 
   /// No description provided for @authCreateAccountButton.
@@ -1133,13 +1133,13 @@ abstract class AppLocalizations {
   /// No description provided for @authOpenEmailAppDescription.
   ///
   /// In en, this message translates to:
-  /// **'Find message from Seedly Garden'**
+  /// **'Find message from GrowPico Garden'**
   String get authOpenEmailAppDescription;
 
   /// No description provided for @authVerifyAccountTitle.
   ///
   /// In en, this message translates to:
-  /// **'Tap \'Verify my Seedly Account\''**
+  /// **'Tap \'Verify my GrowPico Account\''**
   String get authVerifyAccountTitle;
 
   /// No description provided for @authVerifyAccountDescription.
@@ -1265,7 +1265,7 @@ abstract class AppLocalizations {
   /// No description provided for @authOnboardingHeroDescription.
   ///
   /// In en, this message translates to:
-  /// **'Complete fun botany missions, ask Seedly AI anything, and unlock 10 progressive medals as your real greenhouse thrives.'**
+  /// **'Complete fun botany missions, ask GrowPico AI anything, and unlock 10 progressive medals as your real greenhouse thrives.'**
   String get authOnboardingHeroDescription;
 
   /// No description provided for @authGardenMasterBadge.
@@ -1511,7 +1511,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpSupportFaqA1.
   ///
   /// In en, this message translates to:
-  /// **'Open the Seedly app, tap Add Smart Pot, and hold the pairing button for 3 seconds until the LED blinks blue.'**
+  /// **'Open the GrowPico app, tap Add Smart Pot, and hold the pairing button for 3 seconds until the LED blinks blue.'**
   String get helpSupportFaqA1;
 
   /// No description provided for @helpSupportFaqQ2.
@@ -1703,7 +1703,7 @@ abstract class AppLocalizations {
   /// No description provided for @profilePlusBadge.
   ///
   /// In en, this message translates to:
-  /// **'SEEDLY Plus'**
+  /// **'GROWPICO Plus'**
   String get profilePlusBadge;
 
   /// No description provided for @profileUpsellTitle.
@@ -1763,7 +1763,7 @@ abstract class AppLocalizations {
   /// No description provided for @subscriptionMemberBadge.
   ///
   /// In en, this message translates to:
-  /// **'SEEDLY Plus Member'**
+  /// **'GROWPICO Plus Member'**
   String get subscriptionMemberBadge;
 
   /// No description provided for @subscriptionHeroTitle.

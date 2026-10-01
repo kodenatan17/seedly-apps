@@ -1,6 +1,6 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:seedly_app/cores/domain/auth_local_data_source.dart';
-import 'package:seedly_app/cores/helpers/base_exception_helper.dart';
+import 'package:growpico_app/cores/domain/auth_local_data_source.dart';
+import 'package:growpico_app/cores/helpers/base_exception_helper.dart';
 
 /// Feature-level superset of the cores-facing [AuthLocalDataSource] contract,
 /// adding session-clearing for a future logout usecase.

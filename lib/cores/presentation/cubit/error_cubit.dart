@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import 'package:seedly_app/cores/presentation/error_enum.dart';
+import 'package:growpico_app/cores/presentation/error_enum.dart';
 
 part 'error_state.dart';
 

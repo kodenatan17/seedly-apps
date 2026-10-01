@@ -8,21 +8,21 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:seedly_app/atomic/theme/app_theme.dart';
-import 'package:seedly_app/cores/env/env.dart';
-import 'package:seedly_app/cores/globals.dart';
-import 'package:seedly_app/cores/presentation/cubit/error_cubit.dart';
-import 'package:seedly_app/cores/presentation/cubit/internet_connection_cubit.dart';
-import 'package:seedly_app/cores/router/app_router.dart';
-import 'package:seedly_app/features/auth/presentation/routes/auth_routes.dart';
-import 'package:seedly_app/features/experience/presentation/routes/achievement_routes.dart';
-import 'package:seedly_app/features/experience/presentation/routes/mission_routes.dart';
-import 'package:seedly_app/features/garden/presentation/routes/garden_routes.dart';
-import 'package:seedly_app/cores/presentation/error_enum.dart';
-import 'package:seedly_app/cores/presentation/error_stream.dart';
-import 'package:seedly_app/features/notification/presentation/notification_handle_background.dart';
-import 'package:seedly_app/firebase_options.dart';
-import 'package:seedly_app/l10n/generated/app_localizations.dart';
+import 'package:growpico_app/atomic/theme/app_theme.dart';
+import 'package:growpico_app/cores/env/env.dart';
+import 'package:growpico_app/cores/globals.dart';
+import 'package:growpico_app/cores/presentation/cubit/error_cubit.dart';
+import 'package:growpico_app/cores/presentation/cubit/internet_connection_cubit.dart';
+import 'package:growpico_app/cores/router/app_router.dart';
+import 'package:growpico_app/features/auth/presentation/routes/auth_routes.dart';
+import 'package:growpico_app/features/experience/presentation/routes/achievement_routes.dart';
+import 'package:growpico_app/features/experience/presentation/routes/mission_routes.dart';
+import 'package:growpico_app/features/garden/presentation/routes/garden_routes.dart';
+import 'package:growpico_app/cores/presentation/error_enum.dart';
+import 'package:growpico_app/cores/presentation/error_stream.dart';
+import 'package:growpico_app/features/notification/presentation/notification_handle_background.dart';
+import 'package:growpico_app/firebase_options.dart';
+import 'package:growpico_app/l10n/generated/app_localizations.dart';
 
 import 'cores/dependency/injection.dart';
 
@@ -50,17 +50,17 @@ Future<void> main() async {
   };
 
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  runApp(const SeedlyApp());
+  runApp(const GrowPicoApp());
 }
 
-class SeedlyApp extends StatefulWidget {
-  const SeedlyApp({super.key});
+class GrowPicoApp extends StatefulWidget {
+  const GrowPicoApp({super.key});
 
   @override
-  State<SeedlyApp> createState() => _SeedlyAppState();
+  State<GrowPicoApp> createState() => _GrowPicoAppState();
 }
 
-class _SeedlyAppState extends State<SeedlyApp> with WidgetsBindingObserver {
+class _GrowPicoAppState extends State<GrowPicoApp> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
@@ -118,7 +118,7 @@ class _SeedlyAppState extends State<SeedlyApp> with WidgetsBindingObserver {
     return BlocProvider<GlobalErrorCubit>(
       create: (_) => GlobalErrorCubit(),
       child: MaterialApp.router(
-        title: 'Seedly',
+        title: 'GrowPico',
         theme: AppTheme.light,
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,

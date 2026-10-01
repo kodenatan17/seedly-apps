@@ -1,4 +1,4 @@
-import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
+import 'package:growpico_app/cores/domain/base_result_entity_helper.dart';
 
 import '../entities/garden_home/garden_home_entities.dart';
 import '../repository/garden_repository.dart';

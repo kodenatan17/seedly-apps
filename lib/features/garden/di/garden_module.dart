@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
 
-import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
+import 'package:growpico_app/cores/helpers/base_dio_error_helper.dart';
 import '../applications/repository/garden_repository.dart';
 import '../applications/usecases/check_device_status_usecase.dart';
 import '../applications/usecases/claim_device_usecase.dart';

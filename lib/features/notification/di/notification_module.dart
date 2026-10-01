@@ -1,13 +1,13 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get_it/get_it.dart';
-import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
-import 'package:seedly_app/features/notification/applications/repositories/notification_repository.dart';
-import 'package:seedly_app/features/notification/applications/usecases/notification_store_token_usecase.dart';
-import 'package:seedly_app/features/notification/infrastructure/repositories/notification_repository_impl.dart';
-import 'package:seedly_app/features/notification/infrastructure/services/dio/notification_ret_network_client.dart';
-import 'package:seedly_app/features/notification/infrastructure/services/remote/notification_remote_service.dart';
-import 'package:seedly_app/features/notification/presentation/cubit/notification_cubit.dart';
+import 'package:growpico_app/cores/helpers/base_dio_error_helper.dart';
+import 'package:growpico_app/features/notification/applications/repositories/notification_repository.dart';
+import 'package:growpico_app/features/notification/applications/usecases/notification_store_token_usecase.dart';
+import 'package:growpico_app/features/notification/infrastructure/repositories/notification_repository_impl.dart';
+import 'package:growpico_app/features/notification/infrastructure/services/dio/notification_ret_network_client.dart';
+import 'package:growpico_app/features/notification/infrastructure/services/remote/notification_remote_service.dart';
+import 'package:growpico_app/features/notification/presentation/cubit/notification_cubit.dart';
 
 /// Module composition root.
 ///

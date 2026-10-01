@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:seedly_app/atomic/atomic.dart';
-import 'package:seedly_app/features/auth/presentation/pages/account_detail_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/help_support_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/notification_settings_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/profile_screen.dart';
-import 'package:seedly_app/l10n/l10n.dart';
+import 'package:growpico_app/atomic/atomic.dart';
+import 'package:growpico_app/features/auth/presentation/pages/account_detail_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/help_support_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/notification_settings_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/profile_screen.dart';
+import 'package:growpico_app/l10n/l10n.dart';
 
 Widget _wrap(Widget page, {Locale locale = const Locale('en')}) => MaterialApp(
   theme: AppTheme.light,
@@ -63,7 +63,7 @@ void main() {
       await tester.pumpWidget(_wrap(const HelpSupportScreen()));
 
       const answer =
-          'Open the Seedly app, tap Add Smart Pot, and hold the pairing button for 3 seconds until the LED blinks blue.';
+          'Open the GrowPico app, tap Add Smart Pot, and hold the pairing button for 3 seconds until the LED blinks blue.';
       expect(find.text(answer), findsNothing);
 
       await _tap(tester, find.text('How to pair smart pot?'));

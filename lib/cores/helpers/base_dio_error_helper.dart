@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
+import 'package:growpico_app/cores/domain/base_result_entity_helper.dart';
 
 @singleton
 class BaseDioErrorHandler {

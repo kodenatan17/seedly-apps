@@ -4,9 +4,9 @@
 // repository is where the rest of Auth's business logic attaches.
 // Google sign-in is implemented; requestOtp/verifyOtp/refreshToken/
 // isLoggedIn/authLogout/getCurrentTokens/authDeleteAccount are still TODO.
-import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
-import 'package:seedly_app/features/auth/applications/entities/auth_profile_entities.dart';
-import 'package:seedly_app/features/auth/applications/entities/auth_session_entities.dart';
+import 'package:growpico_app/cores/domain/base_result_entity_helper.dart';
+import 'package:growpico_app/features/auth/applications/entities/auth_profile_entities.dart';
+import 'package:growpico_app/features/auth/applications/entities/auth_session_entities.dart';
 
 abstract class AuthRepository {
   Future<ResultEntity<void>> requestOtp(String phoneNumber);

@@ -33,7 +33,7 @@ class GardenAddPotSuccessScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: BaseAppBar(
-        title: 'SEEDLY OS',
+        title: 'GROWPICO OS',
         showBack: false,
         onClose: onClose,
       ),

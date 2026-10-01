@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:seedly_app/features/auth/applications/entities/auth_session_entities.dart';
+import 'package:growpico_app/features/auth/applications/entities/auth_session_entities.dart';
 
 // TODO: Add request-otp/verify-otp states once those usecases land.
 sealed class AuthState extends Equatable {

@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
 
-import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
+import 'package:growpico_app/cores/helpers/base_dio_error_helper.dart';
 import '../applications/repository/experience_repository.dart';
 import '../applications/usecases/get_achievements_usecase.dart';
 import '../applications/usecases/get_mission_detail_usecase.dart';

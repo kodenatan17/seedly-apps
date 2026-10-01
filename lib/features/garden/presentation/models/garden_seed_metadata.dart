@@ -42,7 +42,7 @@ class GardenSeedMetadata extends Equatable {
   ];
 
   static const _fallback = GardenSeedMetadata(
-    description: 'A resilient companion for your Seedly garden.',
+    description: 'A resilient companion for your GrowPico garden.',
     difficultyLabel: 'Easy',
     lightLabel: 'Full Sun',
     icon: Icons.eco,

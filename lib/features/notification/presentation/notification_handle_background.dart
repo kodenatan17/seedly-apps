@@ -1,7 +1,7 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:seedly_app/cores/env/env.dart';
-import 'package:seedly_app/features/notification/applications/entities/notification_content_entity.dart';
+import 'package:growpico_app/cores/env/env.dart';
+import 'package:growpico_app/features/notification/applications/entities/notification_content_entity.dart';
 
 class NotificationHandleBackground {
   // Initialize flutter local notifications untuk handle lock screen

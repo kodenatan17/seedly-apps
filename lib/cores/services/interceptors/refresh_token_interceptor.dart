@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
-import 'package:seedly_app/cores/dependency/injection.dart';
-import 'package:seedly_app/cores/domain/auth_local_data_source.dart';
-import 'package:seedly_app/cores/domain/auth_token_refresher.dart';
-import 'package:seedly_app/cores/helpers/base_exception_helper.dart';
+import 'package:growpico_app/cores/dependency/injection.dart';
+import 'package:growpico_app/cores/domain/auth_local_data_source.dart';
+import 'package:growpico_app/cores/domain/auth_token_refresher.dart';
+import 'package:growpico_app/cores/helpers/base_exception_helper.dart';
 
 class RefreshTokenInterceptor extends Interceptor {
   final DioForNative dio;

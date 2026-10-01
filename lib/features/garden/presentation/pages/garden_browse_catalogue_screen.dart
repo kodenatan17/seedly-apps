@@ -11,7 +11,7 @@ import '../widgets/species_catalogue_card.dart';
 
 /// Seed catalogue browser — route entry point, exported by `public_api.dart`.
 ///
-/// The header intentionally mirrors the mockup (grid + "Seedly" wordmark +
+/// The header intentionally mirrors the mockup (grid + "GrowPico" wordmark +
 /// bell, no back arrow); the grid icon doubles as the back affordance when
 /// [onBack] is supplied, since this screen can also be reached without one.
 class GardenBrowseCatalogueScreen extends StatefulWidget {
@@ -57,7 +57,7 @@ class _GardenBrowseCatalogueScreenState
                   ),
                   Expanded(
                     child: BaseText(
-                      'Seedly',
+                      'GrowPico',
                       style: AppTypography.headingS,
                       color: AppColors.greenDark,
                       textAlign: TextAlign.center,

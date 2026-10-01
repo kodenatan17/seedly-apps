@@ -1,5 +1,5 @@
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:seedly_app/cores/env/env.dart';
+import 'package:growpico_app/cores/env/env.dart';
 
 /// Wraps `package:google_sign_in`'s v7 API (`initialize` + `authenticate`)
 /// behind a plain contract so [AuthRepositoryImpl] never touches the plugin

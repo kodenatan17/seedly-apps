@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:seedly_app/cores/presentation/error_enum.dart';
+import 'package:growpico_app/cores/presentation/error_enum.dart';
 
 class ErrorEvent {
   final ErrorTypeEnum type;

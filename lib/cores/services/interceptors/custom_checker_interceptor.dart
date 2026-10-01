@@ -1,7 +1,7 @@
 import 'package:chucker_flutter/chucker_flutter.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:seedly_app/cores/dependency/injection.dart';
+import 'package:growpico_app/cores/dependency/injection.dart';
 
 class CustomCheckerInterceptor extends ChuckerDioInterceptor {
   @override

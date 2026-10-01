@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:seedly_app/cores/data/remote/response/remote_response_mapper.dart';
-import 'package:seedly_app/features/experience/applications/entities/question/question_entities.dart';
+import 'package:growpico_app/cores/data/remote/response/remote_response_mapper.dart';
+import 'package:growpico_app/features/experience/applications/entities/question/question_entities.dart';
 
 part 'question_answer_response.g.dart';
 

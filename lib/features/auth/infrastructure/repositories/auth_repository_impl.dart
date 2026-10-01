@@ -1,18 +1,18 @@
 import 'package:dio/dio.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
-import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
-import 'package:seedly_app/features/auth/applications/entities/auth_profile_entities.dart';
-import 'package:seedly_app/features/auth/applications/entities/auth_session_entities.dart';
-import 'package:seedly_app/features/auth/applications/repository/auth_repository.dart';
-import 'package:seedly_app/features/auth/infrastructure/datasources/auth_local_data_source.dart';
-import 'package:seedly_app/features/auth/infrastructure/datasources/google_auth_data_source.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_forgot_password_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_google_sign_in_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_login_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_register_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_update_profile_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
+import 'package:growpico_app/cores/domain/base_result_entity_helper.dart';
+import 'package:growpico_app/cores/helpers/base_dio_error_helper.dart';
+import 'package:growpico_app/features/auth/applications/entities/auth_profile_entities.dart';
+import 'package:growpico_app/features/auth/applications/entities/auth_session_entities.dart';
+import 'package:growpico_app/features/auth/applications/repository/auth_repository.dart';
+import 'package:growpico_app/features/auth/infrastructure/datasources/auth_local_data_source.dart';
+import 'package:growpico_app/features/auth/infrastructure/datasources/google_auth_data_source.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_forgot_password_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_google_sign_in_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_login_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_register_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_update_profile_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
 import 'package:uuid/uuid.dart';
 
 // TODO: Implement requestOtp/verifyOtp/refreshToken/isLoggedIn/authLogout/

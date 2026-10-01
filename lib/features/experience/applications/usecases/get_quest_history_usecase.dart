@@ -1,6 +1,6 @@
-import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
-import 'package:seedly_app/features/experience/applications/entities/quest/quest_history_entities.dart';
-import 'package:seedly_app/features/experience/applications/repository/experience_repository.dart';
+import 'package:growpico_app/cores/domain/base_result_entity_helper.dart';
+import 'package:growpico_app/features/experience/applications/entities/quest/quest_history_entities.dart';
+import 'package:growpico_app/features/experience/applications/repository/experience_repository.dart';
 
 /// Fetches completed quest history for one plant
 /// (`GET /v1/plants/:id/quests/progress`).

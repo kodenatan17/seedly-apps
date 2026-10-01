@@ -1,19 +1,19 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:seedly_app/cores/dependency/injection.dart';
-import 'package:seedly_app/features/auth/presentation/bloc/auth_bloc.dart';
-import 'package:seedly_app/features/auth/presentation/pages/account_detail_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/forgot_password_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/help_support_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/login_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/notification_settings_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/onboarding_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/otp_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/profile_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/register_screen.dart';
-import 'package:seedly_app/features/auth/presentation/pages/subscription_screen.dart';
-import 'package:seedly_app/features/garden/public_api.dart' show GardenRoutePaths;
+import 'package:growpico_app/cores/dependency/injection.dart';
+import 'package:growpico_app/features/auth/presentation/bloc/auth_bloc.dart';
+import 'package:growpico_app/features/auth/presentation/pages/account_detail_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/forgot_password_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/help_support_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/login_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/notification_settings_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/onboarding_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/otp_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/profile_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/register_screen.dart';
+import 'package:growpico_app/features/auth/presentation/pages/subscription_screen.dart';
+import 'package:growpico_app/features/garden/public_api.dart' show GardenRoutePaths;
 
 /// Route paths owned by the Auth feature.
 ///

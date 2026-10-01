@@ -11,7 +11,7 @@ import '../bloc/seed_resolve/seed_resolve_event.dart';
 import '../bloc/seed_resolve/seed_resolve_state.dart';
 import '../widgets/qr_scanner_frame.dart';
 
-/// QR scanner for a SEEDLY seed/kit code — route entry point, exported by
+/// QR scanner for a GROWPICO seed/kit code — route entry point, exported by
 /// `public_api.dart`.
 ///
 /// A detected payload is resolved through the same [SeedResolveBloc] as

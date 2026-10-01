@@ -55,7 +55,7 @@ class _GardenChooseContainerScreenState
 
     return Scaffold(
       appBar: BaseAppBar(
-        title: 'Seedly',
+        title: 'GrowPico',
         onBack: widget.onBack,
         onClose: widget.onClose,
       ),

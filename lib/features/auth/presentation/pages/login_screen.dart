@@ -152,7 +152,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       BaseText(
-                        l10n.authNewToSeedly,
+                        l10n.authNewToGrowPico,
                         style: AppTypography.bodyM,
                         color: AppColors.textSecondary,
                       ),

@@ -28,7 +28,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Expanded(
                     child: BaseText(
-                      'SEEDLY',
+                      'GROWPICO',
                       style: AppTypography.headingS,
                       color: AppColors.greenDark,
                       letterSpacing: 2,

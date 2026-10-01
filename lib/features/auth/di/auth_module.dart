@@ -1,23 +1,23 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:seedly_app/cores/domain/auth_local_data_source.dart';
-import 'package:seedly_app/cores/domain/auth_token_refresher.dart';
-import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
-import 'package:seedly_app/features/auth/applications/repository/auth_repository.dart';
-import 'package:seedly_app/features/auth/applications/usecases/forgot_password_usecase.dart';
-import 'package:seedly_app/features/auth/applications/usecases/get_profile_usecase.dart';
-import 'package:seedly_app/features/auth/applications/usecases/google_sign_in_usecase.dart';
-import 'package:seedly_app/features/auth/applications/usecases/login_usecase.dart';
-import 'package:seedly_app/features/auth/applications/usecases/register_usecase.dart';
-import 'package:seedly_app/features/auth/applications/usecases/update_profile_usecase.dart';
-import 'package:seedly_app/features/auth/infrastructure/datasources/auth_local_data_source.dart';
-import 'package:seedly_app/features/auth/infrastructure/datasources/google_auth_data_source.dart';
-import 'package:seedly_app/features/auth/infrastructure/repositories/auth_repository_impl.dart';
-import 'package:seedly_app/features/auth/infrastructure/repositories/auth_token_refresher_impl.dart';
-import 'package:seedly_app/features/auth/infrastructure/services/dio/auth_api_dio.dart';
-import 'package:seedly_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
-import 'package:seedly_app/features/auth/presentation/bloc/auth_bloc.dart';
+import 'package:growpico_app/cores/domain/auth_local_data_source.dart';
+import 'package:growpico_app/cores/domain/auth_token_refresher.dart';
+import 'package:growpico_app/cores/helpers/base_dio_error_helper.dart';
+import 'package:growpico_app/features/auth/applications/repository/auth_repository.dart';
+import 'package:growpico_app/features/auth/applications/usecases/forgot_password_usecase.dart';
+import 'package:growpico_app/features/auth/applications/usecases/get_profile_usecase.dart';
+import 'package:growpico_app/features/auth/applications/usecases/google_sign_in_usecase.dart';
+import 'package:growpico_app/features/auth/applications/usecases/login_usecase.dart';
+import 'package:growpico_app/features/auth/applications/usecases/register_usecase.dart';
+import 'package:growpico_app/features/auth/applications/usecases/update_profile_usecase.dart';
+import 'package:growpico_app/features/auth/infrastructure/datasources/auth_local_data_source.dart';
+import 'package:growpico_app/features/auth/infrastructure/datasources/google_auth_data_source.dart';
+import 'package:growpico_app/features/auth/infrastructure/repositories/auth_repository_impl.dart';
+import 'package:growpico_app/features/auth/infrastructure/repositories/auth_token_refresher_impl.dart';
+import 'package:growpico_app/features/auth/infrastructure/services/dio/auth_api_dio.dart';
+import 'package:growpico_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
+import 'package:growpico_app/features/auth/presentation/bloc/auth_bloc.dart';
 
 /// Module composition root.
 ///

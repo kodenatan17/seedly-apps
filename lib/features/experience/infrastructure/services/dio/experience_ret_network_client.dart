@@ -3,11 +3,11 @@ import 'package:dio/io.dart';
 import 'package:injectable/injectable.dart';
 import 'package:firebase_performance_dio/firebase_performance_dio.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
-import 'package:seedly_app/cores/env/env.dart';
-import 'package:seedly_app/cores/services/interceptors/authorization_interceptor.dart';
-import 'package:seedly_app/cores/services/interceptors/firebase_performance_interceptor.dart';
-import 'package:seedly_app/cores/services/interceptors/refresh_token_interceptor.dart';
-import 'package:seedly_app/features/experience/infrastructure/services/remote/experience_remote_service.dart';
+import 'package:growpico_app/cores/env/env.dart';
+import 'package:growpico_app/cores/services/interceptors/authorization_interceptor.dart';
+import 'package:growpico_app/cores/services/interceptors/firebase_performance_interceptor.dart';
+import 'package:growpico_app/cores/services/interceptors/refresh_token_interceptor.dart';
+import 'package:growpico_app/features/experience/infrastructure/services/remote/experience_remote_service.dart';
 
 @singleton
 class ExperienceRetApiDio extends DioForNative {

@@ -1,7 +1,7 @@
-import 'package:seedly_app/cores/data/remote/response/boolean_only_remote_response.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_refresh_token_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/response/auth_refresh_token_response.dart';
-import 'package:seedly_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
+import 'package:growpico_app/cores/data/remote/response/boolean_only_remote_response.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_refresh_token_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/response/auth_refresh_token_response.dart';
+import 'package:growpico_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
 
 abstract class AuthRemoteDataSource {
   // Future<String> signInWithGoogle(String idToken);

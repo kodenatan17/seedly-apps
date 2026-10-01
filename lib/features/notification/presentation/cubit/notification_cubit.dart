@@ -5,7 +5,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import 'package:seedly_app/features/notification/applications/entities/notification_content_entity.dart';
+import 'package:growpico_app/features/notification/applications/entities/notification_content_entity.dart';
 
 part 'notification_state.dart';
 

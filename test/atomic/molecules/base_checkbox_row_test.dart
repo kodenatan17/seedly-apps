@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:seedly_app/atomic/atomic.dart';
+import 'package:growpico_app/atomic/atomic.dart';
 
 Widget _wrap(Widget child) => MaterialApp(
   theme: AppTheme.light,

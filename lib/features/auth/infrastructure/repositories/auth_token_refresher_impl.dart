@@ -1,7 +1,7 @@
-import 'package:seedly_app/cores/domain/auth_refresh_token_result.dart';
-import 'package:seedly_app/cores/domain/auth_token_refresher.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_refresh_token_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
+import 'package:growpico_app/cores/domain/auth_refresh_token_result.dart';
+import 'package:growpico_app/cores/domain/auth_token_refresher.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_refresh_token_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
 
 /// Adapter that keeps [AuthRefreshTokenRequestModel]/response DTOs from ever
 /// reaching cores/ — the only thing crossing the boundary is

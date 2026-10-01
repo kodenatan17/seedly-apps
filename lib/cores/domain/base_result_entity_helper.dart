@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:seedly_app/cores/data/remote/response/base_success_response.dart';
+import 'package:growpico_app/cores/data/remote/response/base_success_response.dart';
 
 mixin ResultEntity<T> {
   void when({

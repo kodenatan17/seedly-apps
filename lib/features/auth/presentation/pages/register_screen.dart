@@ -5,7 +5,7 @@ import '../../../../l10n/l10n.dart';
 import '../widgets/auth_google_button.dart';
 import '../widgets/password_visibility_toggle.dart';
 
-/// "Create your SEEDLY account" registration screen — route entry point,
+/// "Create your GROWPICO account" registration screen — route entry point,
 /// exported by `public_api.dart`.
 ///
 /// Presentation only: the form validates locally and hands the credentials to

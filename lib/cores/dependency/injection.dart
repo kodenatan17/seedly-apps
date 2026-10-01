@@ -1,8 +1,8 @@
 import 'package:get_it/get_it.dart';
-import 'package:seedly_app/features/auth/di/auth_module.dart';
-import 'package:seedly_app/features/experience/di/experience_module.dart';
-import 'package:seedly_app/features/garden/di/garden_module.dart';
-import 'package:seedly_app/features/notification/di/notification_module.dart';
+import 'package:growpico_app/features/auth/di/auth_module.dart';
+import 'package:growpico_app/features/experience/di/experience_module.dart';
+import 'package:growpico_app/features/garden/di/garden_module.dart';
+import 'package:growpico_app/features/notification/di/notification_module.dart';
 
 /// The single, application-level DI container.
 ///

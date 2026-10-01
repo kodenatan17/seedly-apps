@@ -281,7 +281,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get gardenWaitingDescription =>
-      'Hubungkan Seedly Smart Pot fisik atau mulai menumbuhkan benih digital pertamamu hari ini!';
+      'Hubungkan GrowPico Smart Pot fisik atau mulai menumbuhkan benih digital pertamamu hari ini!';
 
   @override
   String get addFirstPlantButton => 'Tambah Tanaman Pertamaku';
@@ -342,10 +342,10 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get scanQrMethodDescription =>
-      'Cara tercepat jika kamu punya starter kit Seedly.';
+      'Cara tercepat jika kamu punya starter kit GrowPico.';
 
   @override
-  String get enterCodeMethodTitle => 'Masukkan Kode SEEDLY';
+  String get enterCodeMethodTitle => 'Masukkan Kode GROWPICO';
 
   @override
   String get enterCodeMethodDescription =>
@@ -363,7 +363,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get iotSyncFooterNote =>
-      'Pot Pintar tersinkron dengan SEEDLY OS melalui BLE 5.2';
+      'Pot Pintar tersinkron dengan GROWPICO OS melalui BLE 5.2';
 
   @override
   String smartPotReadyTitle(String potName) {
@@ -378,7 +378,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get scanQrCodeTitle => 'Pindai Kode QR';
 
   @override
-  String get scanSeedCodeHeadline => 'Pindai kode benih SEEDLY-mu 🌱';
+  String get scanSeedCodeHeadline => 'Pindai kode benih GROWPICO-mu 🌱';
 
   @override
   String get scanSeedCodeDescription => 'Arahkan kode QR ke dalam bingkai.';
@@ -397,10 +397,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get addPlantTitle => 'Tambah Tanaman';
 
   @override
-  String get enterSeedlyCodeHeadline => 'Masukkan Kode SEEDLY';
+  String get enterGrowPicoCodeHeadline => 'Masukkan Kode GROWPICO';
 
   @override
-  String get enterSeedlyCodeDescription =>
+  String get enterGrowPicoCodeDescription =>
       'Temukan kode 10 digit di bagian bawah sensor kit atau pada buku petunjuk.';
 
   @override
@@ -421,7 +421,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get seedCatalogueDescription =>
-      'Pilih benih untuk memulai perjalanannya. Setiap tanaman dilengkapi rutinitas perawatan yang disesuaikan agar tumbuh subur di lingkungan Seedly-mu.';
+      'Pilih benih untuk memulai perjalanannya. Setiap tanaman dilengkapi rutinitas perawatan yang disesuaikan agar tumbuh subur di lingkungan GrowPico-mu.';
 
   @override
   String get addSeedButton => 'Tambah Benih';
@@ -526,13 +526,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get authSignInWithGoogle => 'Masuk dengan Google';
 
   @override
-  String get authNewToSeedly => 'Baru di Seedly?';
+  String get authNewToGrowPico => 'Baru di GrowPico?';
 
   @override
   String get authCreateAnAccountLink => 'Buat akun';
 
   @override
-  String get authRegisterTitle => 'Buat akun SEEDLY kamu 🌱';
+  String get authRegisterTitle => 'Buat akun GROWPICO kamu 🌱';
 
   @override
   String get authRegisterSubtitle =>
@@ -569,7 +569,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get authTermsAgreement =>
-      'Saya setuju dengan Ketentuan Keluarga Seedly dan Kebijakan Privasi Keselamatan Anak';
+      'Saya setuju dengan Ketentuan Keluarga GrowPico dan Kebijakan Privasi Keselamatan Anak';
 
   @override
   String get authCreateAccountButton => 'Buat Akun';
@@ -625,10 +625,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get authOpenEmailAppTitle => 'Buka aplikasi email';
 
   @override
-  String get authOpenEmailAppDescription => 'Cari pesan dari Seedly Garden';
+  String get authOpenEmailAppDescription => 'Cari pesan dari GrowPico Garden';
 
   @override
-  String get authVerifyAccountTitle => 'Ketuk \'Verifikasi akun Seedly-ku\'';
+  String get authVerifyAccountTitle => 'Ketuk \'Verifikasi akun GrowPico-ku\'';
 
   @override
   String get authVerifyAccountDescription =>
@@ -699,7 +699,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get authOnboardingHeroDescription =>
-      'Selesaikan misi botani yang seru, tanya apa saja ke Seedly AI, dan buka 10 medali progresif saat rumah kaca nyatamu tumbuh subur.';
+      'Selesaikan misi botani yang seru, tanya apa saja ke GrowPico AI, dan buka 10 medali progresif saat rumah kaca nyatamu tumbuh subur.';
 
   @override
   String get authGardenMasterBadge => 'Master Kebun';
@@ -829,7 +829,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get helpSupportFaqA1 =>
-      'Buka app Seedly, tap Tambah Pot Pintar, tahan tombol pairing 3 detik sampai LED berkedip biru.';
+      'Buka app GrowPico, tap Tambah Pot Pintar, tahan tombol pairing 3 detik sampai LED berkedip biru.';
 
   @override
   String get helpSupportFaqQ2 => 'Panduan jadwal penyiraman';
@@ -937,7 +937,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get profileLevelLabel => 'Explorer Level 5';
 
   @override
-  String get profilePlusBadge => 'SEEDLY Plus';
+  String get profilePlusBadge => 'GROWPICO Plus';
 
   @override
   String get profileUpsellTitle => 'Buka Keajaiban Lebih Banyak!';
@@ -968,7 +968,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get profileSettingsHelp => 'Bantuan & Dukungan';
 
   @override
-  String get subscriptionMemberBadge => 'Member SEEDLY Plus';
+  String get subscriptionMemberBadge => 'Member GROWPICO Plus';
 
   @override
   String get subscriptionHeroTitle => 'Naik Level Kebun Digitalmu';

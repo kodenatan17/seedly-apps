@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:seedly_app/cores/dependency/injection.dart';
-import 'package:seedly_app/cores/domain/auth_local_data_source.dart';
+import 'package:growpico_app/cores/dependency/injection.dart';
+import 'package:growpico_app/cores/domain/auth_local_data_source.dart';
 
 class AuthorizationInterceptors extends Interceptor {
   bool isWhiteListPath(RequestOptions options) {

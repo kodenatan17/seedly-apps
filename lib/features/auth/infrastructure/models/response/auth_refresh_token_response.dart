@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:seedly_app/cores/data/remote/response/remote_response_mapper.dart';
-import 'package:seedly_app/cores/domain/auth_refresh_token_result.dart';
+import 'package:growpico_app/cores/data/remote/response/remote_response_mapper.dart';
+import 'package:growpico_app/cores/domain/auth_refresh_token_result.dart';
 
 part 'auth_refresh_token_response.g.dart';
 

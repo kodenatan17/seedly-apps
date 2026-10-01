@@ -1,4 +1,4 @@
-import 'package:seedly_app/cores/domain/auth_refresh_token_result.dart';
+import 'package:growpico_app/cores/domain/auth_refresh_token_result.dart';
 
 /// Token-refresh contract needed by `RefreshTokenInterceptor`.
 ///

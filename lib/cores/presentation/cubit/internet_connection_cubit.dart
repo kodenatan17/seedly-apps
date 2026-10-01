@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import 'package:seedly_app/cores/presentation/error_enum.dart';
-import 'package:seedly_app/cores/presentation/error_stream.dart';
+import 'package:growpico_app/cores/presentation/error_enum.dart';
+import 'package:growpico_app/cores/presentation/error_stream.dart';
 
 @singleton
 class InternetConnectionCubit extends Cubit<bool> {

@@ -1,23 +1,23 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:seedly_app/cores/data/remote/response/base_success_response.dart';
-import 'package:seedly_app/cores/data/remote/response/boolean_only_remote_response.dart';
-import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
-import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
-import 'package:seedly_app/features/auth/applications/entities/auth_profile_entities.dart';
-import 'package:seedly_app/features/auth/applications/entities/auth_session_entities.dart';
-import 'package:seedly_app/features/auth/infrastructure/datasources/auth_local_data_source.dart';
-import 'package:seedly_app/features/auth/infrastructure/datasources/google_auth_data_source.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_forgot_password_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_login_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_register_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/request/auth_update_profile_request_model.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/response/auth_account_session_response.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/response/auth_profile_response.dart';
-import 'package:seedly_app/features/auth/infrastructure/models/response/auth_update_profile_response.dart';
-import 'package:seedly_app/features/auth/infrastructure/repositories/auth_repository_impl.dart';
-import 'package:seedly_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
+import 'package:growpico_app/cores/data/remote/response/base_success_response.dart';
+import 'package:growpico_app/cores/data/remote/response/boolean_only_remote_response.dart';
+import 'package:growpico_app/cores/domain/base_result_entity_helper.dart';
+import 'package:growpico_app/cores/helpers/base_dio_error_helper.dart';
+import 'package:growpico_app/features/auth/applications/entities/auth_profile_entities.dart';
+import 'package:growpico_app/features/auth/applications/entities/auth_session_entities.dart';
+import 'package:growpico_app/features/auth/infrastructure/datasources/auth_local_data_source.dart';
+import 'package:growpico_app/features/auth/infrastructure/datasources/google_auth_data_source.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_forgot_password_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_login_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_register_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/request/auth_update_profile_request_model.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/response/auth_account_session_response.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/response/auth_profile_response.dart';
+import 'package:growpico_app/features/auth/infrastructure/models/response/auth_update_profile_response.dart';
+import 'package:growpico_app/features/auth/infrastructure/repositories/auth_repository_impl.dart';
+import 'package:growpico_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
 
 class MockAuthRemoteService extends Mock implements AuthRemoteService {}
 

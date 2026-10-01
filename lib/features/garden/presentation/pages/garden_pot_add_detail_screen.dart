@@ -50,7 +50,7 @@ class GardenPotAddDetailScreen extends StatelessWidget {
               ),
               const BaseGap.v(16),
               const BaseText(
-                'Seedly Smart Grow Pot v2',
+                'GrowPico Smart Grow Pot v2',
                 style: AppTypography.bodyM,
                 color: AppColors.textSecondary,
               ),

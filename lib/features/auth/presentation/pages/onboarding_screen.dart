@@ -51,11 +51,15 @@ class OnboardingScreen extends StatelessWidget {
                     backgroundSize: 36,
                   ),
                   const BaseGap.h(10),
-                  BaseText(
-                    'SEEDLY',
-                    style: AppTypography.headingS,
-                    color: AppColors.greenDark,
-                    letterSpacing: 2,
+                  Flexible(
+                    child: BaseText(
+                      'GROWPICO',
+                      style: AppTypography.headingS,
+                      color: AppColors.greenDark,
+                      letterSpacing: 2,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                   const Spacer(),
                   BaseBadge(

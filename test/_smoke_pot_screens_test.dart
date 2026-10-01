@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:seedly_app/atomic/atomic.dart';
-import 'package:seedly_app/features/garden/public_api.dart';
-import 'package:seedly_app/l10n/l10n.dart';
+import 'package:growpico_app/atomic/atomic.dart';
+import 'package:growpico_app/features/garden/public_api.dart';
+import 'package:growpico_app/l10n/l10n.dart';
 
 Widget _wrap(Widget page) => MaterialApp(
   theme: AppTheme.light,

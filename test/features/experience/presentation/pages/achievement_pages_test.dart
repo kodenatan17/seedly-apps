@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:seedly_app/atomic/atomic.dart';
-import 'package:seedly_app/features/experience/presentation/pages/achievement_milestone_page.dart';
-import 'package:seedly_app/features/experience/presentation/pages/achievement_page.dart';
-import 'package:seedly_app/features/experience/presentation/pages/achievement_unlocked_page.dart';
-import 'package:seedly_app/features/experience/presentation/widgets/achievement/medal_tier_timeline_item.dart';
-import 'package:seedly_app/features/experience/presentation/widgets/achievement/unlocked_medal_tile.dart';
-import 'package:seedly_app/l10n/l10n.dart';
+import 'package:growpico_app/atomic/atomic.dart';
+import 'package:growpico_app/features/experience/presentation/pages/achievement_milestone_page.dart';
+import 'package:growpico_app/features/experience/presentation/pages/achievement_page.dart';
+import 'package:growpico_app/features/experience/presentation/pages/achievement_unlocked_page.dart';
+import 'package:growpico_app/features/experience/presentation/widgets/achievement/medal_tier_timeline_item.dart';
+import 'package:growpico_app/features/experience/presentation/widgets/achievement/unlocked_medal_tile.dart';
+import 'package:growpico_app/l10n/l10n.dart';
 
 Widget _wrap(Widget page, {Locale locale = const Locale('en')}) => MaterialApp(
   theme: AppTheme.light,

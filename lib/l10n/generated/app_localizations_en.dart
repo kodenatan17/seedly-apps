@@ -282,7 +282,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get gardenWaitingDescription =>
-      'Connect a physical Seedly Smart Pot or start growing your first digital seed companion today!';
+      'Connect a physical GrowPico Smart Pot or start growing your first digital seed companion today!';
 
   @override
   String get addFirstPlantButton => 'Add My First Plant';
@@ -344,10 +344,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get scanQrMethodDescription =>
-      'Fastest way if you have a Seedly starter kit.';
+      'Fastest way if you have a GrowPico starter kit.';
 
   @override
-  String get enterCodeMethodTitle => 'Enter SEEDLY Code';
+  String get enterCodeMethodTitle => 'Enter GROWPICO Code';
 
   @override
   String get enterCodeMethodDescription =>
@@ -364,7 +364,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get confirmSmartPotButton => 'Confirm Smart Pot';
 
   @override
-  String get iotSyncFooterNote => 'Smart Pot syncs with SEEDLY OS over BLE 5.2';
+  String get iotSyncFooterNote =>
+      'Smart Pot syncs with GROWPICO OS over BLE 5.2';
 
   @override
   String smartPotReadyTitle(String potName) {
@@ -379,7 +380,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get scanQrCodeTitle => 'Scan QR Code';
 
   @override
-  String get scanSeedCodeHeadline => 'Scan your SEEDLY seed code 🌱';
+  String get scanSeedCodeHeadline => 'Scan your GROWPICO seed code 🌱';
 
   @override
   String get scanSeedCodeDescription => 'Hold the QR code inside the frame.';
@@ -398,10 +399,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get addPlantTitle => 'Add Plant';
 
   @override
-  String get enterSeedlyCodeHeadline => 'Enter SEEDLY Code';
+  String get enterGrowPicoCodeHeadline => 'Enter GROWPICO Code';
 
   @override
-  String get enterSeedlyCodeDescription =>
+  String get enterGrowPicoCodeDescription =>
       'Find the 10-digit code on the bottom of your sensor kit or on the instruction manual.';
 
   @override
@@ -422,7 +423,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get seedCatalogueDescription =>
-      'Choose a seed to begin its journey. Each plant comes with tailored care routines to help it thrive in your Seedly environment.';
+      'Choose a seed to begin its journey. Each plant comes with tailored care routines to help it thrive in your GrowPico environment.';
 
   @override
   String get addSeedButton => 'Add Seed';
@@ -526,13 +527,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authSignInWithGoogle => 'Sign in with Google';
 
   @override
-  String get authNewToSeedly => 'New to Seedly?';
+  String get authNewToGrowPico => 'New to GrowPico?';
 
   @override
   String get authCreateAnAccountLink => 'Create an account';
 
   @override
-  String get authRegisterTitle => 'Create your SEEDLY account 🌱';
+  String get authRegisterTitle => 'Create your GROWPICO account 🌱';
 
   @override
   String get authRegisterSubtitle =>
@@ -569,7 +570,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get authTermsAgreement =>
-      'I agree to Seedly Family Terms and Child Safety Privacy Policy';
+      'I agree to GrowPico Family Terms and Child Safety Privacy Policy';
 
   @override
   String get authCreateAccountButton => 'Create Account';
@@ -625,10 +626,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authOpenEmailAppTitle => 'Open email app';
 
   @override
-  String get authOpenEmailAppDescription => 'Find message from Seedly Garden';
+  String get authOpenEmailAppDescription => 'Find message from GrowPico Garden';
 
   @override
-  String get authVerifyAccountTitle => 'Tap \'Verify my Seedly Account\'';
+  String get authVerifyAccountTitle => 'Tap \'Verify my GrowPico Account\'';
 
   @override
   String get authVerifyAccountDescription =>
@@ -700,7 +701,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get authOnboardingHeroDescription =>
-      'Complete fun botany missions, ask Seedly AI anything, and unlock 10 progressive medals as your real greenhouse thrives.';
+      'Complete fun botany missions, ask GrowPico AI anything, and unlock 10 progressive medals as your real greenhouse thrives.';
 
   @override
   String get authGardenMasterBadge => 'Garden Master';
@@ -830,7 +831,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpSupportFaqA1 =>
-      'Open the Seedly app, tap Add Smart Pot, and hold the pairing button for 3 seconds until the LED blinks blue.';
+      'Open the GrowPico app, tap Add Smart Pot, and hold the pairing button for 3 seconds until the LED blinks blue.';
 
   @override
   String get helpSupportFaqQ2 => 'Watering schedule guide';
@@ -937,7 +938,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileLevelLabel => 'Explorer Level 5';
 
   @override
-  String get profilePlusBadge => 'SEEDLY Plus';
+  String get profilePlusBadge => 'GROWPICO Plus';
 
   @override
   String get profileUpsellTitle => 'Unlock More Magic!';
@@ -968,7 +969,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileSettingsHelp => 'Help & Support';
 
   @override
-  String get subscriptionMemberBadge => 'SEEDLY Plus Member';
+  String get subscriptionMemberBadge => 'GROWPICO Plus Member';
 
   @override
   String get subscriptionHeroTitle => 'Level Up Your Sanctuary';

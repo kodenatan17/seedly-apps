@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
-import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
+import 'package:growpico_app/cores/domain/base_result_entity_helper.dart';
+import 'package:growpico_app/cores/helpers/base_dio_error_helper.dart';
 
 import '../../applications/entities/container/container_entities.dart';
 import '../../applications/entities/container/container_environment_entities.dart';

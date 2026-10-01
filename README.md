@@ -1,4 +1,4 @@
-# seedly_app
+# growpico_app
 
 A new Flutter project.
 

@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:seedly_app/features/auth/applications/usecases/google_sign_in_usecase.dart';
-import 'package:seedly_app/features/auth/presentation/bloc/auth_event.dart';
-import 'package:seedly_app/features/auth/presentation/bloc/auth_state.dart';
+import 'package:growpico_app/features/auth/applications/usecases/google_sign_in_usecase.dart';
+import 'package:growpico_app/features/auth/presentation/bloc/auth_event.dart';
+import 'package:growpico_app/features/auth/presentation/bloc/auth_state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   AuthBloc({required GoogleSignInUseCase googleSignInUseCase})

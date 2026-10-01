@@ -196,7 +196,7 @@ class _BrandHeader extends StatelessWidget {
         ),
         Expanded(
           child: BaseText(
-            'SEEDLY',
+            'GROWPICO',
             style: AppTypography.headingS,
             color: AppColors.greenDark,
             letterSpacing: 2,

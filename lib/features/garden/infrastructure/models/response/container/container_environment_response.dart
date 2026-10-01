@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:seedly_app/cores/data/remote/response/remote_response_mapper.dart';
+import 'package:growpico_app/cores/data/remote/response/remote_response_mapper.dart';
 
 import '../../../../applications/entities/container/container_environment_entities.dart';
 

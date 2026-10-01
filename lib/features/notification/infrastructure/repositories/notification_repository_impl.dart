@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
-import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
-import 'package:seedly_app/features/notification/applications/repositories/notification_repository.dart';
-import 'package:seedly_app/features/notification/applications/usecases/notification_store_token_params.dart';
-import 'package:seedly_app/features/notification/infrastructure/models/request/notification_store_request_model.dart';
-import 'package:seedly_app/features/notification/infrastructure/services/remote/notification_remote_service.dart';
+import 'package:growpico_app/cores/domain/base_result_entity_helper.dart';
+import 'package:growpico_app/cores/helpers/base_dio_error_helper.dart';
+import 'package:growpico_app/features/notification/applications/repositories/notification_repository.dart';
+import 'package:growpico_app/features/notification/applications/usecases/notification_store_token_params.dart';
+import 'package:growpico_app/features/notification/infrastructure/models/request/notification_store_request_model.dart';
+import 'package:growpico_app/features/notification/infrastructure/services/remote/notification_remote_service.dart';
 
 class NotificationRepositoryImpl implements NotificationRepository {
   const NotificationRepositoryImpl(

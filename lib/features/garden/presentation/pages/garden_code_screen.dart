@@ -9,7 +9,7 @@ import '../bloc/seed_resolve/seed_resolve_bloc.dart';
 import '../bloc/seed_resolve/seed_resolve_event.dart';
 import '../bloc/seed_resolve/seed_resolve_state.dart';
 
-/// Manual SEEDLY code entry — route entry point, exported by
+/// Manual GROWPICO code entry — route entry point, exported by
 /// `public_api.dart`. Resolves through the same [SeedResolveBloc] as the QR
 /// scanner.
 class GardenCodeScreen extends StatefulWidget {
@@ -98,14 +98,14 @@ class _GardenCodeScreenState extends State<GardenCodeScreen> {
                   ),
                   const BaseGap.v(24),
                   BaseText(
-                    l10n.enterSeedlyCodeHeadline,
+                    l10n.enterGrowPicoCodeHeadline,
                     style: AppTypography.headingM,
                     color: AppColors.greenDark,
                     textAlign: TextAlign.center,
                   ),
                   const BaseGap.v(10),
                   BaseText(
-                    l10n.enterSeedlyCodeDescription,
+                    l10n.enterGrowPicoCodeDescription,
                     style: AppTypography.bodyM,
                     color: AppColors.textSecondary,
                     textAlign: TextAlign.center,

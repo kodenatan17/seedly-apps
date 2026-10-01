@@ -1,17 +1,17 @@
 import 'package:get_it/get_it.dart';
-import 'package:seedly_app/cores/dependency/injection.dart';
+import 'package:growpico_app/cores/dependency/injection.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:seedly_app/features/experience/infrastructure/mappers/mission_dto_mapper.dart';
-import 'package:seedly_app/features/experience/applications/entities/mission_definition.dart';
-import 'package:seedly_app/features/experience/applications/entities/mission_instance.dart';
-import 'package:seedly_app/features/experience/applications/entities/mission_scope.dart';
-import 'package:seedly_app/features/experience/applications/entities/mission_status.dart';
-import 'package:seedly_app/features/experience/applications/repositories/mission_repository.dart';
-import 'package:seedly_app/features/experience/applications/usecases/get_mission_detail_usecase.dart';
-import 'package:seedly_app/features/experience/applications/usecases/get_missions_usecase.dart';
-import 'package:seedly_app/features/experience/presentation/bloc/mission_bloc.dart';
-import 'package:seedly_app/features/experience/presentation/bloc/mission_event.dart';
-import 'package:seedly_app/features/experience/presentation/bloc/mission_state.dart';
+import 'package:growpico_app/features/experience/infrastructure/mappers/mission_dto_mapper.dart';
+import 'package:growpico_app/features/experience/applications/entities/mission_definition.dart';
+import 'package:growpico_app/features/experience/applications/entities/mission_instance.dart';
+import 'package:growpico_app/features/experience/applications/entities/mission_scope.dart';
+import 'package:growpico_app/features/experience/applications/entities/mission_status.dart';
+import 'package:growpico_app/features/experience/applications/repositories/mission_repository.dart';
+import 'package:growpico_app/features/experience/applications/usecases/get_mission_detail_usecase.dart';
+import 'package:growpico_app/features/experience/applications/usecases/get_missions_usecase.dart';
+import 'package:growpico_app/features/experience/presentation/bloc/mission_bloc.dart';
+import 'package:growpico_app/features/experience/presentation/bloc/mission_event.dart';
+import 'package:growpico_app/features/experience/presentation/bloc/mission_state.dart';
 
 /// One self-check file covering the module's non-trivial logic:
 /// DTO parsing (strict), Bloc's loading → loaded transition, and DI registration.

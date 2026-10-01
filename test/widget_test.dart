@@ -4,8 +4,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';
 
-import 'package:seedly_app/app.dart';
-import 'package:seedly_app/cores/dependency/injection.dart';
+import 'package:growpico_app/main.dart';
+import 'package:growpico_app/cores/dependency/injection.dart';
 
 void main() {
   setUp(() {
@@ -13,9 +13,9 @@ void main() {
     registerCoreDependencies();
   });
 
-  testWidgets('SeedlyApp boots to the Missions list route',
+  testWidgets('GrowPicoApp boots to the Missions list route',
       (WidgetTester tester) async {
-    await tester.pumpWidget(SeedlyApp());
+    await tester.pumpWidget(GrowPicoApp());
     await tester.pumpAndSettle();
 
     expect(find.text('Missions'), findsOneWidget);
