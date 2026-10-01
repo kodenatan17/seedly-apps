@@ -5,6 +5,7 @@
 // Google sign-in is implemented; requestOtp/verifyOtp/refreshToken/
 // isLoggedIn/authLogout/getCurrentTokens/authDeleteAccount are still TODO.
 import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
+import 'package:seedly_app/features/auth/applications/entities/auth_profile_entities.dart';
 import 'package:seedly_app/features/auth/applications/entities/auth_session_entities.dart';
 
 abstract class AuthRepository {
@@ -23,4 +24,18 @@ abstract class AuthRepository {
   Future<ResultEntity<void>> authDeleteAccount();
 
   Future<ResultEntity<AuthSessionEntity>> signInWithGoogle();
+
+  Future<ResultEntity<AuthSessionEntity>> login(String email, String password);
+
+  Future<ResultEntity<AuthSessionEntity>> register(
+    String email,
+    String password,
+    String confirmPassword,
+  );
+
+  Future<ResultEntity<bool>> forgotPassword(String email);
+
+  Future<ResultEntity<ProfileEntity>> getProfile();
+
+  Future<ResultEntity<UpdateProfileResultEntity>> updateProfile(String username);
 }

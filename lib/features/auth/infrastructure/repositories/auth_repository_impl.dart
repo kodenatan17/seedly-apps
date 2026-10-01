@@ -2,12 +2,18 @@ import 'package:dio/dio.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:seedly_app/cores/domain/base_result_entity_helper.dart';
 import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
+import 'package:seedly_app/features/auth/applications/entities/auth_profile_entities.dart';
 import 'package:seedly_app/features/auth/applications/entities/auth_session_entities.dart';
 import 'package:seedly_app/features/auth/applications/repository/auth_repository.dart';
 import 'package:seedly_app/features/auth/infrastructure/datasources/auth_local_data_source.dart';
 import 'package:seedly_app/features/auth/infrastructure/datasources/google_auth_data_source.dart';
+import 'package:seedly_app/features/auth/infrastructure/models/request/auth_forgot_password_request_model.dart';
 import 'package:seedly_app/features/auth/infrastructure/models/request/auth_google_sign_in_request_model.dart';
+import 'package:seedly_app/features/auth/infrastructure/models/request/auth_login_request_model.dart';
+import 'package:seedly_app/features/auth/infrastructure/models/request/auth_register_request_model.dart';
+import 'package:seedly_app/features/auth/infrastructure/models/request/auth_update_profile_request_model.dart';
 import 'package:seedly_app/features/auth/infrastructure/services/remote/auth_remote_service.dart';
+import 'package:uuid/uuid.dart';
 
 // TODO: Implement requestOtp/verifyOtp/refreshToken/isLoggedIn/authLogout/
 // getCurrentTokens/authDeleteAccount alongside the OTP login usecases.
@@ -23,6 +29,17 @@ class AuthRepositoryImpl implements AuthRepository {
   final GoogleAuthDataSource _googleAuthDataSource;
   final AuthSessionLocalDataSource _authSessionLocalDataSource;
   final BaseDioErrorHandler _baseDioErrorHandler;
+
+  Future<ResultEntity<T>> _guard<T>(Future<T> Function() call) async {
+    try {
+      return ResultEntity.success(data: await call());
+    } on DioException catch (error) {
+      return _baseDioErrorHandler.handleDioError(error) ??
+          ResultEntity.error(message: error.message);
+    } catch (error) {
+      return ResultEntity.error(message: error.toString());
+    }
+  }
 
   @override
   Future<ResultEntity<AuthSessionEntity>> signInWithGoogle() async {
@@ -84,4 +101,64 @@ class AuthRepositoryImpl implements AuthRepository {
   Future<ResultEntity<void>> authDeleteAccount() {
     throw UnimplementedError();
   }
+
+  @override
+  Future<ResultEntity<AuthSessionEntity>> login(
+    String email,
+    String password,
+  ) => _guard(() async {
+    final session = (await _authRemoteService.login(
+      AuthLoginRequestModel(email: email, password: password),
+      idempotencyKey: const Uuid().v4(),
+    )).data.toDomain();
+    await _authSessionLocalDataSource.setToken(
+      accessToken: session.accessToken,
+      refreshToken: session.refreshToken ?? '',
+    );
+    return session;
+  });
+
+  @override
+  Future<ResultEntity<AuthSessionEntity>> register(
+    String email,
+    String password,
+    String confirmPassword,
+  ) => _guard(() async {
+    final session = (await _authRemoteService.register(
+      AuthRegisterRequestModel(
+        email: email,
+        password: password,
+        confirmPassword: confirmPassword,
+      ),
+      idempotencyKey: const Uuid().v4(),
+    )).data.toDomain();
+    await _authSessionLocalDataSource.setToken(
+      accessToken: session.accessToken,
+      refreshToken: session.refreshToken ?? '',
+    );
+    return session;
+  });
+
+  @override
+  Future<ResultEntity<bool>> forgotPassword(String email) => _guard(
+    () async => (await _authRemoteService.forgotPassword(
+      AuthForgotPasswordRequestModel(email: email),
+      idempotencyKey: const Uuid().v4(),
+    )).data.isSuccess,
+  );
+
+  @override
+  Future<ResultEntity<ProfileEntity>> getProfile() => _guard(
+    () async => (await _authRemoteService.getProfile()).data.toDomain(),
+  );
+
+  @override
+  Future<ResultEntity<UpdateProfileResultEntity>> updateProfile(
+    String username,
+  ) => _guard(
+    () async => (await _authRemoteService.updateProfile(
+      AuthUpdateProfileRequestModel(username: username),
+      idempotencyKey: const Uuid().v4(),
+    )).data.toDomain(),
+  );
 }

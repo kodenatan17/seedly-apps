@@ -19,7 +19,7 @@ final GetIt getIt = GetIt.instance;
 // TODO: Re-add @InjectableInit() (from package:injectable) once the
 // injectable_generator build_runner step is wired up and injection.config.dart
 // is generated. Until then the annotation has no generated part to attach to.
-void registerCoreDependencies() {
+void registerCoreDependencies() async {
   AuthModule.register(getIt: getIt);
   ExperienceModule.register(getIt: getIt);
   GardenModule.register(getIt: getIt);

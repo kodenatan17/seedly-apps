@@ -5,7 +5,12 @@ import 'package:seedly_app/cores/domain/auth_local_data_source.dart';
 import 'package:seedly_app/cores/domain/auth_token_refresher.dart';
 import 'package:seedly_app/cores/helpers/base_dio_error_helper.dart';
 import 'package:seedly_app/features/auth/applications/repository/auth_repository.dart';
+import 'package:seedly_app/features/auth/applications/usecases/forgot_password_usecase.dart';
+import 'package:seedly_app/features/auth/applications/usecases/get_profile_usecase.dart';
 import 'package:seedly_app/features/auth/applications/usecases/google_sign_in_usecase.dart';
+import 'package:seedly_app/features/auth/applications/usecases/login_usecase.dart';
+import 'package:seedly_app/features/auth/applications/usecases/register_usecase.dart';
+import 'package:seedly_app/features/auth/applications/usecases/update_profile_usecase.dart';
 import 'package:seedly_app/features/auth/infrastructure/datasources/auth_local_data_source.dart';
 import 'package:seedly_app/features/auth/infrastructure/datasources/google_auth_data_source.dart';
 import 'package:seedly_app/features/auth/infrastructure/repositories/auth_repository_impl.dart';
@@ -82,6 +87,31 @@ class AuthModule {
     if (!getIt.isRegistered<GoogleSignInUseCase>()) {
       getIt.registerLazySingleton<GoogleSignInUseCase>(
         () => GoogleSignInUseCase(getIt<AuthRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<LoginUseCase>()) {
+      getIt.registerLazySingleton<LoginUseCase>(
+        () => LoginUseCase(getIt<AuthRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<RegisterUseCase>()) {
+      getIt.registerLazySingleton<RegisterUseCase>(
+        () => RegisterUseCase(getIt<AuthRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<ForgotPasswordUseCase>()) {
+      getIt.registerLazySingleton<ForgotPasswordUseCase>(
+        () => ForgotPasswordUseCase(getIt<AuthRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<GetProfileUseCase>()) {
+      getIt.registerLazySingleton<GetProfileUseCase>(
+        () => GetProfileUseCase(getIt<AuthRepository>()),
+      );
+    }
+    if (!getIt.isRegistered<UpdateProfileUseCase>()) {
+      getIt.registerLazySingleton<UpdateProfileUseCase>(
+        () => UpdateProfileUseCase(getIt<AuthRepository>()),
       );
     }
     // Blocs: factory-registered (fresh instance per resolution), same

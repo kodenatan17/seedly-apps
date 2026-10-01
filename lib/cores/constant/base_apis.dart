@@ -72,8 +72,15 @@ class BaseApis {
 
   static const String authLogout = '/auth/logout';
 
+  // --- Account (api_contracts_backend.md §1) --------------------------------
+  static const String accountAuthLogin = '/v1/account/auth/login';
+  static const String accountAuthRegister = '/v1/account/auth/register';
+  static const String accountAuthForgotPassword =
+      '/v1/account/auth/forgot-password';
+  static const String accountProfile = '/v1/account/profile'; // GET + PATCH
+
   static const String notificationRegisterToken =
       '/v1/notifications/register-token';
 
-  static String get notificationStoreToken => null;
+  static const String notificationStoreToken = '/v1/notifications/store-token';
 }

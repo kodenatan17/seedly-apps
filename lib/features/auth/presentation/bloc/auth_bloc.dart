@@ -3,7 +3,6 @@ import 'package:seedly_app/features/auth/applications/usecases/google_sign_in_us
 import 'package:seedly_app/features/auth/presentation/bloc/auth_event.dart';
 import 'package:seedly_app/features/auth/presentation/bloc/auth_state.dart';
 
-// TODO: Wire request-otp/submit-otp usecases once they land.
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   AuthBloc({required GoogleSignInUseCase googleSignInUseCase})
     : _googleSignInUseCase = googleSignInUseCase,

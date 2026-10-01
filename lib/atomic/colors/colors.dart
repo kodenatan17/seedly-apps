@@ -35,6 +35,13 @@ abstract final class AppColors {
   static const Color lavender = Color(0xFFEEF0FA);
   static const Color lavenderIcon = Color(0xFF6366F1);
 
+  // --- other accents ---------------------------------------------------
+  /// "Browse Catalogue" icon background (garden add-seed method picker).
+  static const Color maroon = Color(0xFF9C3D54);
+
+  /// Muted primary-button fill used on the seed-code entry screen.
+  static const Color sage = Color(0xFF8AAB94);
+
   // --- neutrals ------------------------------------------------------------
   static const Color background = Color(0xFFF7F8FC);
   static const Color surface = Color(0xFFFFFFFF);

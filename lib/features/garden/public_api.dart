@@ -13,9 +13,76 @@
 /// firmware surfaces, not called by this app, and are intentionally not
 /// modelled here.
 ///
-/// **No presentation layer yet** — this module currently exposes entities,
-/// use cases and the DI composition root only. No pages, blocs, or routes.
+/// Presentation: the "Add a Plant" flow (empty-garden hero, method picker,
+/// QR scan, manual code entry, catalogue, container selection, success) is
+/// implemented with `flutter_bloc`. The Garden Home dashboard
+/// (`GET /v1/garden/home`) and device pairing/calibration screens are not
+/// sliced yet — only entities/use cases exist for those.
 library;
+
+// --- route entry points -----------------------------------------------
+export 'presentation/pages/garden_add_seed_success.dart'
+    show GardenAddSeedSuccessScreen;
+export 'presentation/pages/garden_add_seeds_screen.dart'
+    show GardenAddSeedsScreen;
+export 'presentation/pages/garden_browse_catalogue_screen.dart'
+    show GardenBrowseCatalogueScreen;
+export 'presentation/pages/garden_choose_container_screen.dart'
+    show GardenChooseContainerScreen;
+export 'presentation/pages/garden_code_screen.dart' show GardenCodeScreen;
+export 'presentation/pages/garden_qr_scanner_screen.dart'
+    show GardenQrScannerScreen;
+export 'presentation/pages/garden_screen.dart' show GardenScreen;
+
+// --- route definitions (composed into the global router by the app) ------
+export 'presentation/routes/garden_routes.dart'
+    show gardenRoutes, GardenRoutePaths;
+
+// --- presentation blocs -----------------------------------------------
+export 'presentation/bloc/garden/garden_bloc.dart' show GardenBloc;
+export 'presentation/bloc/garden/garden_event.dart'
+    show GardenEvent, GardenRequested, GardenRefreshed;
+export 'presentation/bloc/garden/garden_state.dart'
+    show GardenState, GardenLoading, GardenEmpty, GardenLoaded, GardenError;
+export 'presentation/bloc/plant_creation/plant_creation_bloc.dart'
+    show PlantCreationBloc;
+export 'presentation/bloc/plant_creation/plant_creation_event.dart'
+    show
+        PlantCreationEvent,
+        PlantCreationContainersRequested,
+        PlantCreationContainerSelected,
+        PlantCreationSubmitted;
+export 'presentation/bloc/plant_creation/plant_creation_state.dart'
+    show PlantCreationState, PlantCreationStatus;
+export 'presentation/bloc/seed_resolve/seed_resolve_bloc.dart'
+    show SeedResolveBloc;
+export 'presentation/bloc/seed_resolve/seed_resolve_event.dart'
+    show SeedResolveEvent, SeedCodeResolveRequested, SeedResolveReset;
+export 'presentation/bloc/seed_resolve/seed_resolve_state.dart'
+    show
+        SeedResolveState,
+        SeedResolveInitial,
+        SeedResolveLoading,
+        SeedResolveSuccess,
+        SeedResolveError;
+export 'presentation/bloc/species_catalogue/species_catalogue_bloc.dart'
+    show SpeciesCatalogueBloc;
+export 'presentation/bloc/species_catalogue/species_catalogue_event.dart'
+    show SpeciesCatalogueEvent, SpeciesCatalogueRequested;
+export 'presentation/bloc/species_catalogue/species_catalogue_state.dart'
+    show
+        SpeciesCatalogueState,
+        SpeciesCatalogueLoading,
+        SpeciesCatalogueLoaded,
+        SpeciesCatalogueError;
+
+// --- presentation models ------------------------------------------------
+export 'presentation/models/container_slot_ui_model.dart'
+    show ContainerSlotUiModel;
+export 'presentation/models/garden_seed_metadata.dart'
+    show GardenSeedMetadata, GardenJourneyStage;
+export 'presentation/models/garden_seed_selection.dart'
+    show GardenSeedSelectionUiModel;
 
 // --- module composition ---------------------------------------------------
 export 'di/garden_module.dart' show GardenModule, GardenUseCases;

@@ -14,6 +14,9 @@ class AuthorizationInterceptors extends Interceptor {
     '/auth/submit-otp',
     '/auth/refresh-token',
     '/auth/google-sign-in',
+    '/v1/account/auth/login',
+    '/v1/account/auth/register',
+    '/v1/account/auth/forgot-password',
   ];
 
   @override

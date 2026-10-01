@@ -24,6 +24,10 @@ import '../infrastructure/datasources/garden_remote_data_source.dart';
 import '../infrastructure/repositories/garden_repository_impl.dart';
 import '../infrastructure/services/dio/garden_ret_network_client.dart';
 import '../infrastructure/services/remote/garden_remote_service.dart';
+import '../presentation/bloc/garden/garden_bloc.dart';
+import '../presentation/bloc/plant_creation/plant_creation_bloc.dart';
+import '../presentation/bloc/seed_resolve/seed_resolve_bloc.dart';
+import '../presentation/bloc/species_catalogue/species_catalogue_bloc.dart';
 
 /// Module composition root.
 ///
@@ -158,6 +162,35 @@ class GardenModule {
     if (!getIt.isRegistered<DeletePlantUseCase>()) {
       getIt.registerLazySingleton(
         () => DeletePlantUseCase(getIt<GardenRepository>()),
+      );
+    }
+
+    // Blocs: factory-registered (fresh instance per resolution) so each
+    // route push owns its own bloc lifecycle, matching
+    // `ExperienceModule.register`. Route builders in
+    // `presentation/routes/garden_routes.dart` resolve these via `getIt`
+    // instead of constructing use cases/repositories by hand.
+    if (!getIt.isRegistered<GardenBloc>()) {
+      getIt.registerFactory<GardenBloc>(
+        () => GardenBloc(listContainers: getIt<ListContainersUseCase>()),
+      );
+    }
+    if (!getIt.isRegistered<SpeciesCatalogueBloc>()) {
+      getIt.registerFactory<SpeciesCatalogueBloc>(
+        () => SpeciesCatalogueBloc(listSpecies: getIt<ListSpeciesUseCase>()),
+      );
+    }
+    if (!getIt.isRegistered<SeedResolveBloc>()) {
+      getIt.registerFactory<SeedResolveBloc>(
+        () => SeedResolveBloc(resolveSeedCode: getIt<ResolveSeedCodeUseCase>()),
+      );
+    }
+    if (!getIt.isRegistered<PlantCreationBloc>()) {
+      getIt.registerFactory<PlantCreationBloc>(
+        () => PlantCreationBloc(
+          listContainers: getIt<ListContainersUseCase>(),
+          createPlant: getIt<CreatePlantUseCase>(),
+        ),
       );
     }
   }

@@ -43,7 +43,14 @@ class BaseBadge extends StatelessWidget {
             Icon(icon, size: iconSize, color: foregroundColor),
             const BaseGap.h(4),
           ],
-          BaseText(label, style: textStyle, color: foregroundColor),
+          Flexible(
+            child: BaseText(
+              label,
+              style: textStyle,
+              color: foregroundColor,
+              maxLines: 1,
+            ),
+          ),
         ],
       ),
     );

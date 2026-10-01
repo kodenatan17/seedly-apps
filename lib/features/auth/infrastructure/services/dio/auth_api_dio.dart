@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
+import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:seedly_app/cores/env/env.dart';
 import 'package:seedly_app/cores/services/interceptors/authorization_interceptor.dart';
@@ -32,13 +33,15 @@ class AuthApiDio extends DioForNative {
   void _configureInterceptors() {
     interceptors.add(AuthorizationInterceptors());
     interceptors.add(RefreshTokenInterceptor(this));
-    interceptors.add(
-      PrettyDioLogger(
-        requestHeader: true,
-        requestBody: true,
-        responseBody: true,
-        responseHeader: false,
-      ),
-    );
+    if (kDebugMode) {
+      interceptors.add(
+        PrettyDioLogger(
+          requestHeader: true,
+          requestBody: true,
+          responseBody: true,
+          responseHeader: false,
+        ),
+      );
+    }
   }
 }

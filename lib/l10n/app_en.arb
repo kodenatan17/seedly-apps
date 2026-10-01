@@ -3,6 +3,7 @@
 
   "backButtonLabel": "Back",
   "closeButtonLabel": "Close",
+  "retryButtonLabel": "Retry",
   "progressFraction": "{current} / {total}",
   "@progressFraction": {
     "placeholders": {
@@ -160,5 +161,302 @@
   "unlockedPerkLabel": "Unlocked Perk",
   "goldenPotPerk": "Special Golden Pot Skin & +100 XP Bonus!",
   "claimRewardAndContinue": "Claim Reward & Continue",
-  "viewInMedalJourney": "View in Medal Journey"
+  "viewInMedalJourney": "View in Medal Journey",
+
+  "welcomeGreeting": "Welcome, {name}! 🌱",
+  "@welcomeGreeting": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "gardenWaitingTitle": "Your garden is waiting.",
+  "gardenWaitingDescription": "Connect a physical Seedly Smart Pot or start growing your first digital seed companion today!",
+  "addFirstPlantButton": "Add My First Plant",
+  "scanSmartPotButton": "Scan Smart Pot QR Code",
+  "zeroStressTitle": "Zero stress, 100% fun!",
+  "zeroStressDescription": "We'll guide you step by step with gentle watering tips.",
+  "readyBadgeLabel": "Ready!",
+  "navHome": "Home",
+  "navGarden": "Garden",
+  "navMissions": "Missions",
+  "navChat": "Chat",
+  "navProfile": "Profile",
+  "gardenHasPlantsTitle": "Your garden is growing!",
+  "gardenHasPlantsDescription": "{count, plural, =1{1 plant across your containers.} other{{count} plants across your containers.}}",
+  "@gardenHasPlantsDescription": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "viewMyPlantsButton": "View My Plants",
+
+  "addNewSeedTitle": "Add New Seed",
+  "addSeedQuestion": "How would you like to introduce your new plant to the garden?",
+  "scanQrMethodTitle": "Scan QR",
+  "scanQrMethodDescription": "Fastest way if you have a Seedly starter kit.",
+  "enterCodeMethodTitle": "Enter SEEDLY Code",
+  "enterCodeMethodDescription": "Type the 6-digit code on your seed packet.",
+  "browseCatalogueMethodTitle": "Browse Catalogue",
+  "browseCatalogueMethodDescription": "Adding a plant you bought somewhere else?",
+
+  "scanQrCodeTitle": "Scan QR Code",
+  "scanSeedCodeHeadline": "Scan your SEEDLY seed code 🌱",
+  "scanSeedCodeDescription": "Hold the QR code inside the frame.",
+  "tapToScanHint": "Tap to scan the Plant QR Code",
+  "enterCodeManuallyButton": "Enter Code Manually",
+  "cameraPermissionDenied": "Camera access is needed to scan a QR code.",
+
+  "addPlantTitle": "Add Plant",
+  "enterSeedlyCodeHeadline": "Enter SEEDLY Code",
+  "enterSeedlyCodeDescription": "Find the 10-digit code on the bottom of your sensor kit or on the instruction manual.",
+  "seedCodeHint": "XXXXX-XXXXX",
+  "continueButton": "Continue",
+  "whereFindCodeLink": "Where do I find my code?",
+  "invalidSeedCodeError": "Enter the 10-digit code exactly as printed.",
+
+  "seedCatalogueTitle": "Seed Catalogue",
+  "seedCatalogueDescription": "Choose a seed to begin its journey. Each plant comes with tailored care routines to help it thrive in your Seedly environment.",
+  "addSeedButton": "Add Seed",
+  "inactiveSpeciesBadge": "Coming soon",
+
+  "expectedJourneyTitle": "Expected Journey",
+  "whereWillYouGrow": "Where will you grow {name}?",
+  "@whereWillYouGrow": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "confirmPlantingButton": "Confirm Planting",
+  "containerReadyStatus": "READY",
+  "containerFullStatus": "Garden is full",
+  "smartPotLabel": "Smart Pot {letter}",
+  "@smartPotLabel": {
+    "placeholders": {
+      "letter": {"type": "String"}
+    }
+  },
+  "directPlantSubtitle": "Direct Plant",
+  "kitKeywordSubtitle": "{kitName} Kit",
+  "@kitKeywordSubtitle": {
+    "placeholders": {
+      "kitName": {"type": "String"}
+    }
+  },
+  "adventureSuffixTitle": "{speciesName} Adventure",
+  "@adventureSuffixTitle": {
+    "placeholders": {
+      "speciesName": {"type": "String"}
+    }
+  },
+
+  "plantJoinedTitle": "{name} has joined your garden! 🌱",
+  "@plantJoinedTitle": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "growthJourneyBeginsToday": "Your growth journey begins today.",
+  "daySproutingLabel": "Day {day}: Sprouting",
+  "@daySproutingLabel": {
+    "placeholders": {
+      "day": {"type": "int"}
+    }
+  },
+  "firstQuestUnlockedTitle": "First Quest Unlocked!",
+  "firstQuestUnlockedDescription": "Take a photo of your new plant to start its timeline.",
+  "goToMyGardenButton": "Go to My Garden",
+
+  "authWelcomeBackTitle": "Welcome back 🌱",
+  "authWelcomeBackSubtitle": "Log in to see how Tommy and your garden are thriving today!",
+  "authEmailLabel": "Email Address",
+  "authPasswordLabel": "Password",
+  "authEmailHint": "alex.grower@example.com",
+  "authPasswordHint": "GardenSecret123",
+  "authMinCharsHint": "min 8 chars",
+  "authRememberMe": "Remember me",
+  "authForgotPasswordLink": "Forgot password?",
+  "authLogInButton": "Log In",
+  "authOrDivider": "or",
+  "authSignInWithGoogle": "Sign in with Google",
+  "authNewToSeedly": "New to Seedly?",
+  "authCreateAnAccountLink": "Create an account",
+  "authRegisterTitle": "Create your SEEDLY account 🌱",
+  "authRegisterSubtitle": "Save your plants, track real-time telemetry, and earn garden medals together.",
+  "authRegisterEmailHint": "nurul.gardener@gmail.com",
+  "authConfirmPasswordLabel": "Confirm Password",
+  "authWeakPasswordLabel": "Weak password",
+  "authMediumPasswordLabel": "Medium password",
+  "authStrongPasswordLabel": "Strong password",
+  "authPasswordLevelLabel": "Lvl. {level} {tier}",
+  "@authPasswordLevelLabel": {
+    "placeholders": {
+      "level": {"type": "int"},
+      "tier": {"type": "String"}
+    }
+  },
+  "authPasswordTierSeed": "Seed",
+  "authPasswordTierSprout": "Sprout",
+  "authPasswordTierBloom": "Bloom",
+  "authTermsAgreement": "I agree to Seedly Family Terms and Child Safety Privacy Policy",
+  "authCreateAccountButton": "Create Account",
+  "authEmailRequiredError": "Email is required",
+  "authPasswordMinLengthError": "Use at least 8 characters",
+  "authPasswordMismatchError": "Passwords don't match",
+  "authOrRegisterWith": "or register with",
+  "authContinueWithGoogle": "Continue with Google",
+  "authPrivacyNote": "We only use your account to preserve your smart container pairings, care streaks, and botany certificates.",
+  "authAlreadyHaveAccount": "Already have an account?",
+  "authLogInLink": "Log In",
+  "authStepProgress": "Step {current} of {total}",
+  "@authStepProgress": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "authCheckEmailTitle": "Check your email 📩",
+  "authCheckEmailSubtitle": "We sent a magical confirmation link to:",
+  "authCheckEmailHint": "Tap the link in your inbox to sprout your account!",
+  "authQuickStepsTitle": "Quick 3-step sprout",
+  "authEasyPeasyBadge": "EASY PEASY",
+  "authOpenEmailAppTitle": "Open email app",
+  "authOpenEmailAppDescription": "Find message from Seedly Garden",
+  "authVerifyAccountTitle": "Tap 'Verify my Seedly Account'",
+  "authVerifyAccountDescription": "Look for the big green button inside",
+  "authReturnToPlantTitle": "Return here to start planting",
+  "authReturnToPlantDescription": "Your cozy seedling plot is all prepped",
+  "authOpenMailAppButton": "Open Mail App",
+  "authResendLinkCountdown": "Resend link ({seconds}s)",
+  "@authResendLinkCountdown": {
+    "placeholders": {
+      "seconds": {"type": "int"}
+    }
+  },
+  "authResendLinkButton": "Resend link",
+  "authChangeEmailLink": "Wrong email address? Change email",
+  "authSpamNote": "Can't find the email? Don't forget to check your spam or promotions folder. Sometimes baby sprouts get tucked into quiet corners!",
+  "authResetPasswordTitle": "Reset Your Password 🔑",
+  "authResetPasswordSubtitle": "Enter your registered email and we'll send you safe instructions to reset your garden access.",
+  "authAccountEmailLabel": "Your Account Email",
+  "authAccountEmailBadge": "Grown-up or Guardian",
+  "authAccountEmailHint": "hello@familygarden.com",
+  "authSendResetLinkButton": "Send Reset Link",
+  "authEncryptedKidSafe": "Encrypted & Kid-Safe",
+  "authNeedHandTitle": "Need a hand right now?",
+  "authNeedHandDescription": "Contact our friendly family care guides anytime at {email}",
+  "@authNeedHandDescription": {
+    "placeholders": {
+      "email": {"type": "String"}
+    }
+  },
+  "authSupportEmail": "support@seedly.app",
+  "authBackToLogIn": "Back to Log In",
+  "authOnboardingHeroTitle": "Learn, Earn & Flourish 🌿",
+  "authOnboardingHeroDescription": "Complete fun botany missions, ask Seedly AI anything, and unlock 10 progressive medals as your real greenhouse thrives.",
+  "authGardenMasterBadge": "Garden Master",
+  "authBotanyQuickChecksTitle": "Botany Quick Checks",
+  "authBotanyQuickChecksDescription": "Daily 60-second micro-missions",
+  "authXpBadge": "+10 XP",
+  "authMedalJourneyTitle": "10 Medal Mastery Journey",
+  "authMedalJourneySubtitle": "Seedling to Bloom Master",
+  "authMedalJourneyFraction": "{current} / {total}",
+  "@authMedalJourneyFraction": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "authPlantCompanionTitle": "Intelligent Plant Companion",
+  "authPlantCompanionDescription": "24/7 kid-friendly botany chat",
+  "authGetStartedButton": "Get Started",
+  "accountDetailTitle": "Account Detail",
+  "accountDetailMemberSince": "Member Since: March 2023",
+  "accountDetailLevelBadge": "Level 4 Botanist",
+  "accountDetailStreakBadge": "12 Streaks",
+  "accountDetailPersonalInfoTitle": "Personal Information",
+  "accountDetailDisplayNameLabel": "Display Name",
+  "accountDetailDisplayNameHint": "Sam D.",
+  "accountDetailEmailLabel": "Email Address",
+  "accountDetailEmailHint": "sam.gardener@example.com",
+  "accountDetailUpdateButton": "Update Profile Details",
+  "accountDetailPotsTitle": "Associated Smart Pots",
+  "accountDetailAddNewLink": "+ Add New",
+  "accountDetailPotAName": "Smart Pot A",
+  "accountDetailPotASpecies": "Monstera Deliciosa",
+  "accountDetailPotASoil": "• Soil: 68% • Ideal",
+  "accountDetailPotBName": "Smart Pot B",
+  "accountDetailPotBSpecies": "Fiddle Leaf Fig",
+  "accountDetailPotBSoil": "• Temp: 24°C • Stable",
+  "accountDetailFooterNote": "Your plants are thriving under your care!",
+  "helpSupportBanner": "We're here to help, little sprout!",
+  "helpSupportTitle": "Help & Support",
+  "helpSupportSubtitle": "Find quick answers, chat with our master gardeners, or explore helpful guides.",
+  "helpSupportSearchHint": "Search FAQs (e.g., smart pot, watering)",
+  "helpSupportOnlineBadge": "Gardeners Online",
+  "helpSupportChatTitle": "Chat with Support",
+  "helpSupportChatSubtitle": "Got a tricky question? We reply in minutes!",
+  "helpSupportChatButton": "Chat",
+  "helpSupportFaqTitle": "Frequently Asked Questions",
+  "helpSupportViewAllLink": "View All",
+  "helpSupportFaqQ1": "How to pair smart pot?",
+  "helpSupportFaqA1": "Open the Seedly app, tap Add Smart Pot, and hold the pairing button for 3 seconds until the LED blinks blue.",
+  "helpSupportFaqQ2": "Watering schedule guide",
+  "helpSupportFaqA2": "Most houseplants like a drink every 5-7 days; check the soil moisture reading before adding water.",
+  "helpSupportFaqQ3": "Subscription renewal & billing",
+  "helpSupportFaqA3": "Plus renews monthly via your chosen payment method; cancel anytime from the Subscription screen.",
+  "helpSupportFaqQ4": "What if my plant isn't growing?",
+  "helpSupportFaqA4": "Check light and water levels first — our AI chat can diagnose common issues from a photo.",
+  "helpSupportGuidesTitle": "User Guides & Manuals",
+  "helpSupportGuide1Title": "Quick Start Guide",
+  "helpSupportGuide1Meta": "PDF • 2.4 MB",
+  "helpSupportGuide2Title": "Smart Pot Handbook",
+  "helpSupportGuide2Meta": "PDF • 4.1 MB",
+  "helpSupportFactTitle": "Did you know?",
+  "helpSupportFactBody": "Talking to your plants helps them absorb positive vibes! (And carbon dioxide).",
+  "notificationPrefsTitle": "Notifications",
+  "notificationPrefsSubtitle": "Choose what pings your cozy little garden",
+  "notificationPrefsGroupPlantCare": "Plant Care",
+  "notificationPrefsGroupMissions": "Missions & Summary",
+  "notificationPrefsGroupHardware": "Smart Pot & Hardware",
+  "notificationPrefsWateringTitle": "Watering & Thirst",
+  "notificationPrefsWateringSubtitle": "Friendly pings when your green buddies need a drink",
+  "notificationPrefsSunlightTitle": "Sunlight Spotting",
+  "notificationPrefsSunlightSubtitle": "Reminders to move plants to sunny windows",
+  "notificationPrefsDailyMissionTitle": "Daily Mission Alerts",
+  "notificationPrefsDailyMissionSubtitle": "Never miss your daily streak rewards and quests",
+  "notificationPrefsWeeklyGrowthTitle": "Weekly Growth Sun",
+  "notificationPrefsWeeklyGrowthSubtitle": "A sweet recap of how much your garden grew",
+  "notificationPrefsIotTitle": "IoT Connection Warnings",
+  "notificationPrefsIotSubtitle": "Alerts if your smart pot loses Bluetooth or Wi-Fi",
+  "notificationPrefsFooterNote": "Notifications are tailored to your local weather and smart sensor telemetry to keep your plants thriving!",
+  "profileGreeting": "Hi, Sam!",
+  "profileLevelLabel": "Explorer Level 5",
+  "profilePlusBadge": "SEEDLY Plus",
+  "profileUpsellTitle": "Unlock More Magic!",
+  "profileUpsellBody": "Get 100+ more AI chats each day and access to Premium Garden Content.",
+  "profileChatUsage": "10/10 free chats used today",
+  "profileUpgradeButton": "Upgrade to Plus",
+  "profileCancelAnytime": "Cancel anytime.",
+  "profileSettingsLabel": "SETTINGS",
+  "profileSettingsAccount": "Account",
+  "profileSettingsNotifications": "Notifications",
+  "profileSettingsHelp": "Help & Support",
+  "subscriptionMemberBadge": "SEEDLY Plus Member",
+  "subscriptionHeroTitle": "Level Up Your Sanctuary",
+  "subscriptionHeroSubtitle": "Unlock infinite possibilities for your digital garden.",
+  "subscriptionPlanName": "Monthly Pass",
+  "subscriptionPlanPrice": "Rp 49k",
+  "subscriptionPlanPeriod": "/mo",
+  "subscriptionPlanNote": "Cancel anytime, keep your perks",
+  "subscriptionPerkChatTitle": "Unlimited AI Chats",
+  "subscriptionPerkChatBody": "Chat with your garden buddies 24/7 without limits",
+  "subscriptionPerkContentTitle": "Premium Garden Content",
+  "subscriptionPerkContentBody": "Access rare seeds, magical soils, and cozy weather fx",
+  "subscriptionPerkDecorTitle": "Exclusive Pots & Decor",
+  "subscriptionPerkDecorBody": "Custom ceramic, crystal, and glowing neon planters",
+  "subscriptionPaymentMethodBadge": "Midtrans QRIS",
+  "subscriptionTimerBadge": "04:58",
+  "subscriptionScanInstruction": "Scan with any banking app or e-wallet:",
+  "subscriptionCheckStatusButton": "Check Payment Status",
+  "subscriptionSimulateSuccessButton": "Simulate Successful Payment"
 }
