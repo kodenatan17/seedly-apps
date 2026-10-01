@@ -198,6 +198,15 @@
   "enterCodeMethodDescription": "Type the 6-digit code on your seed packet.",
   "browseCatalogueMethodTitle": "Browse Catalogue",
   "browseCatalogueMethodDescription": "Adding a plant you bought somewhere else?",
+  "confirmSmartPotButton": "Confirm Smart Pot",
+  "iotSyncFooterNote": "Smart Pot syncs with SEEDLY OS over BLE 5.2",
+  "smartPotReadyTitle": "Your {potName} is ready",
+  "@smartPotReadyTitle": {
+    "placeholders": {
+      "potName": {"type": "String"}
+    }
+  },
+  "smartPotReadyDescription": "Your Smart Pot is paired and ready to grow. Place your seeds to begin the journey.",
 
   "scanQrCodeTitle": "Scan QR Code",
   "scanSeedCodeHeadline": "Scan your SEEDLY seed code 🌱",

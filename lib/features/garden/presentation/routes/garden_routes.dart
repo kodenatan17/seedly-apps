@@ -9,8 +9,11 @@ import '../bloc/plant_creation/plant_creation_bloc.dart';
 import '../bloc/seed_resolve/seed_resolve_bloc.dart';
 import '../bloc/species_catalogue/species_catalogue_bloc.dart';
 import '../models/garden_seed_selection.dart';
+import '../pages/garden_add_pot_screen.dart';
+import '../pages/garden_add_pot_success_screen.dart';
 import '../pages/garden_add_seed_success.dart';
 import '../pages/garden_add_seeds_screen.dart';
+import '../pages/garden_pot_add_detail_screen.dart';
 import '../pages/garden_browse_catalogue_screen.dart';
 import '../pages/garden_choose_container_screen.dart';
 import '../pages/garden_code_screen.dart';
@@ -28,6 +31,9 @@ abstract final class GardenRoutePaths {
   static const String catalogue = '/garden/add-seeds/catalogue';
   static const String chooseContainer = '/garden/add-seeds/container';
   static const String success = '/garden/add-seeds/success';
+  static const String addPot = '/garden/add-pot';
+  static const String potDetail = '/garden/add-pot/detail';
+  static const String potSuccess = '/garden/add-pot/success';
 }
 
 /// Pops when possible, otherwise falls back to the Garden landing screen so
@@ -136,6 +142,30 @@ List<RouteBase> gardenRoutes() => [
         ),
       );
     },
+  ),
+  GoRoute(
+    path: GardenRoutePaths.addPot,
+    builder: (context, state) => GardenAddPotScreen(
+      onBack: () => _popOrGarden(context),
+      onClose: () => context.go(GardenRoutePaths.root),
+      onScanQr: () => context.push(GardenRoutePaths.potDetail),
+      onEnterCode: () => context.push(GardenRoutePaths.potDetail),
+    ),
+  ),
+  GoRoute(
+    path: GardenRoutePaths.potDetail,
+    builder: (context, state) => GardenPotAddDetailScreen(
+      onBack: () => _popOrGarden(context),
+      onClose: () => context.go(GardenRoutePaths.root),
+      onConfirm: () => context.push(GardenRoutePaths.potSuccess),
+    ),
+  ),
+  GoRoute(
+    path: GardenRoutePaths.potSuccess,
+    builder: (context, state) => GardenAddPotSuccessScreen(
+      onClose: () => context.go(GardenRoutePaths.root),
+      onConfirm: () => context.go(GardenRoutePaths.root),
+    ),
   ),
   GoRoute(
     path: GardenRoutePaths.success,

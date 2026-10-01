@@ -662,6 +662,30 @@ abstract class AppLocalizations {
   /// **'Adding a plant you bought somewhere else?'**
   String get browseCatalogueMethodDescription;
 
+  /// No description provided for @confirmSmartPotButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Smart Pot'**
+  String get confirmSmartPotButton;
+
+  /// No description provided for @iotSyncFooterNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Smart Pot syncs with SEEDLY OS over BLE 5.2'**
+  String get iotSyncFooterNote;
+
+  /// No description provided for @smartPotReadyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your {potName} is ready'**
+  String smartPotReadyTitle(String potName);
+
+  /// No description provided for @smartPotReadyDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Smart Pot is paired and ready to grow. Place your seeds to begin the journey.'**
+  String get smartPotReadyDescription;
+
   /// No description provided for @scanQrCodeTitle.
   ///
   /// In en, this message translates to:

@@ -361,6 +361,21 @@ class AppLocalizationsEn extends AppLocalizations {
       'Adding a plant you bought somewhere else?';
 
   @override
+  String get confirmSmartPotButton => 'Confirm Smart Pot';
+
+  @override
+  String get iotSyncFooterNote => 'Smart Pot syncs with SEEDLY OS over BLE 5.2';
+
+  @override
+  String smartPotReadyTitle(String potName) {
+    return 'Your $potName is ready';
+  }
+
+  @override
+  String get smartPotReadyDescription =>
+      'Your Smart Pot is paired and ready to grow. Place your seeds to begin the journey.';
+
+  @override
   String get scanQrCodeTitle => 'Scan QR Code';
 
   @override

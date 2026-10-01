@@ -21,8 +21,14 @@
 library;
 
 // --- route entry points -----------------------------------------------
+export 'presentation/pages/garden_add_pot_screen.dart'
+    show GardenAddPotScreen;
+export 'presentation/pages/garden_add_pot_success_screen.dart'
+    show GardenAddPotSuccessScreen;
 export 'presentation/pages/garden_add_seed_success.dart'
     show GardenAddSeedSuccessScreen;
+export 'presentation/pages/garden_pot_add_detail_screen.dart'
+    show GardenPotAddDetailScreen;
 export 'presentation/pages/garden_add_seeds_screen.dart'
     show GardenAddSeedsScreen;
 export 'presentation/pages/garden_browse_catalogue_screen.dart'

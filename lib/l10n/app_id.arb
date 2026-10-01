@@ -101,6 +101,15 @@
   "enterCodeMethodDescription": "Ketik kode 6 digit pada kemasan benihmu.",
   "browseCatalogueMethodTitle": "Jelajahi Katalog",
   "browseCatalogueMethodDescription": "Menambahkan tanaman yang kamu beli di tempat lain?",
+  "confirmSmartPotButton": "Konfirmasi Pot Pintar",
+  "iotSyncFooterNote": "Pot Pintar tersinkron dengan SEEDLY OS melalui BLE 5.2",
+  "smartPotReadyTitle": "{potName}-mu siap",
+  "@smartPotReadyTitle": {
+    "placeholders": {
+      "potName": {"type": "String"}
+    }
+  },
+  "smartPotReadyDescription": "Pot Pintar-mu sudah terhubung dan siap menanam. Letakkan benihmu untuk memulai perjalanan.",
 
   "scanQrCodeTitle": "Pindai Kode QR",
   "scanSeedCodeHeadline": "Pindai kode benih SEEDLY-mu 🌱",
